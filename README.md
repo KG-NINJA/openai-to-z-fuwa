@@ -34,6 +34,10 @@ Fuwa is a fluffy Shiba Inu who silently observed satellite maps with me during r
 This project was born from that quiet gaze. Not all signals are in the data—some are in the silence.
 
 ## 🔗 Submission
+## 🗂️ Included Data Files
+
+- `amazon_ndvi_2023_c2.tif`: Raw NDVI image collected over the Amazon basin.
+- `amazon_ndvi_2023_c2_masked.tif`: NDVI with cloud masking applied; used for anomaly detection.
 
 This project supports submission to Checkpoint #2 of the [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge/overview).
 
