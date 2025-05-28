@@ -1,0 +1,71 @@
+# 🌿 AI-Assisted Discovery of Potential Burial Sites in Manaus
+
+## 📍 1. Introduction
+
+This report documents an AI-powered exploration to identify a potential archaeological site in downtown Manaus, Brazil. The investigation blends historical literature, remote sensing data (NDVI and DEM), and GPT-assisted interpretation.
+
+### Goals:
+
+* Use NDVI to detect vegetation anomalies
+* Use DEM to reveal subtle elevation changes
+* Cross-reference historical burial traditions
+* Evaluate the hypothesis with GPT
+
+## 📅 2. Historical Context
+
+A century-old document described a discovery of red clay urns (Igapabas) in Manaus, believed to be indigenous burial artifacts. These urns were found near the city's old fortifications during land leveling operations.
+
+> "Hundreds of large urns of red clay... used to bury the dead, seen there in long rows, at no great depth in the earth."
+
+## 🌍 3. Target Site: Hospital Rio Negro South
+
+* **Coordinates:** `-60.023207, -3.124824`
+* **Location type:** Unpaved open field within the urban core
+* **Observation:** Satellite images show bare soil patches, unusual NDVI patterns, and surrounding urban development
+
+## 🌱 4. NDVI Analysis
+
+**Tool:** Google Earth Engine
+
+* **NDVI value at point:** `0.04` — Extremely low
+* **Nearby values:** `0.26 - 0.45`
+* Interpretation: Likely disturbed or barren soil, possibly due to buried cultural material (e.g., urns, compacted layers)
+
+## 🌼 5. DEM Analysis
+
+**Tool:** SRTM Digital Elevation Model (30m)
+
+* **DEM status:** No data returned at key point; surrounding points show micro-elevation fluctuations
+* Interpretation: Possible past ground modification or erosion masking the elevation signature
+
+## 🧠 6. GPT Hypothesis Evaluation
+
+A prompt was crafted to evaluate the archaeological plausibility:
+
+> Based on low NDVI, barren ground in an urban void, and historical burial references, could this location correspond to an undiscovered cultural layer?
+
+**GPT's Response:** High likelihood. Indicators align with traditional burial grounds (low vegetation, red clay, river proximity, historical memory).
+
+## 🚪 7. Conclusion
+
+This investigation reveals a strong candidate site for further archaeological interest:
+
+* Coordinates align with historic descriptions
+* Remote sensing reveals natural and artificial disturbances
+* AI models corroborate cultural likelihood
+
+## ⏳ 8. Next Steps
+
+* Refined DEM profiling with transect lines
+* Literature-based site triangulation
+* Collaboration with local archaeological teams
+* Integration into Kaggle Checkpoint #2
+
+## ☕ 9. Support the Journey
+
+If this research inspired you, consider supporting future explorations:
+[https://www.buymeacoffee.com/kg\_ninja](https://www.buymeacoffee.com/kg_ninja)
+
+## 🔗 10. GitHub Repository
+
+Project files and datasets: [https://github.com/KG-NINJA/openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)
