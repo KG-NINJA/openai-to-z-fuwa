@@ -1,6 +1,6 @@
 # openai-to-z-fuwa
 # 🌳 From Forest to Forensics: Detecting Unnatural Vegetation with AI
-
+>This is the first time I've ever participated in Kaggle. I'm just a middle-aged Japanese guy who isn't even an English speaker. But with GPT power, I was able to participate.
 > Powered by GPT-4, fueled by curiosity — and guided by a very fluffy Shiba Inu named Fuwa 🐕
 
 ## 📌 Overview
