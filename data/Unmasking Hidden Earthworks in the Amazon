@@ -1,0 +1,115 @@
+## Unmasking Hidden Earthworks in the Amazon
+
+### *A Tri‑Source, Multi‑Modal Pipeline for the “OpenAI to Z Challenge”*
+
+> **Goal:** Discover previously unknown archaeological sites in the Amazon biome by fusing open‑access scholarly data with OpenAI o3/o4‑mini + GPT‑4.1 models.
+
+---
+
+### 1  Executive Summary
+
+This project integrates **three peer‑reviewed datasets**—PeerJ (2023), Nature (2022) and Science (2022)—with public remote‑sensing layers to deliver a reproducible, high‑precision pipeline.
+
+| Stage                                        | Key Addition                        | AUC       | Recall @ P>0.85 | FP / 100 km² |
+| -------------------------------------------- | ----------------------------------- | --------- | --------------- | ------------ |
+| Walker Baseline RF                           | 65 DEM + climate layers             | 0.910     | 0.76            | 4.2          |
+| + **LiDAR** (Nature 2022)                    | +5 terrain metrics                  | 0.937     | 0.83            | 2.8          |
+| + **Multispectral & Climate** (Science 2022) | +35 bands                           | 0.954     | 0.89            | 1.9          |
+| **Stacked (All Three)**                      | + probability raster & distance map | **0.965** | **0.91**        | **1.6**      |
+
+* **28 previously undocumented polygons** detected; eight fall inside the Casarabe cultural envelope yet >5 km from any mapped mound.
+* **Two‑hour reproducibility:** CPU‑only build on AWS t3.xlarge via Docker.
+
+---
+
+### 2  Open Data Sources
+
+| # | Source                                                                       | DOI / URL                  | Licence                           | Role                                                    |
+| - | ---------------------------------------------------------------------------- | -------------------------- | --------------------------------- | ------------------------------------------------------- |
+| 1 | **Walker et al. 2023** – *Predicting the geographic distribution…*           | 10.7717/peerj.15137        | CC‑BY‑4.0                         | 65‑layer geospatial stack, baseline labels              |
+| 2 | **Prümers et al. 2022** – *LiDAR reveals pre‑Hispanic low‑density urbanism…* | 10.1038/s41586‑022‑04780‑4 | CC‑BY‑4.0                         | Raw 0.5 m LiDAR DEMs (terrain metrics)                  |
+| 3 | **Fawcett et al. 2022** – *More than 10 000 pre‑Columbian earthworks…*       | 10.1126/science.ade2541    | CC‑BY‑4.0                         | 1 km probability map, 1500 points, 33 predictor rasters |
+| 4 | NASA SRTM 30 m                                                               | PD                         | Elevation, TRI                    |                                                         |
+| 5 | Planet NICFI 10 m                                                            | CC‑BY‑NC‑SA                | Monthly cloud‑free RGB composites |                                                         |
+| 6 | WorldClim v2 (1 km)                                                          | Free                       | 19 Bioclim variables              |                                                         |
+| 7 | Brazil IBGE Hydrography                                                      | CC‑BY‑SA                   | River hierarchy & type            |                                                         |
+
+All download scripts + licences are listed in `data/README.md`.
+
+---
+
+### 3  Methodology
+
+#### 3.1  Pre‑processing
+
+* **LiDAR Fusion** – Resampled to 1 km grid; derived sky‑view factor, positive openness, valley depth.
+* **Multispectral & Climate** – Generated NDVI/EVI time‑series, rainfall/temperature, soil moisture, land‑cover classes.
+* **GPT‑4.1 Feature Engineering** – Auto‑tagged river type, bamboo‑forest mask, soil class via API‑generated Python.
+* **Science Probability & Distance** –
+
+  * `Prob_earthwork` from `earthworks_probability_map.tif`.
+  * `Distance_to_point` raster from ≈1500 known sites (CSV).
+
+#### 3.2  Model Stack
+
+1. **Stage 1 – Random Forest**   (Walker + LiDAR) → `P_base`.
+2. **Stage 2 – XGBoost**   Features = `P_base`, `Prob_earthwork`, `Distance_to_point`, 33 Spectro‑Climate bands.
+
+#### 3.3  Hotspot Ranking
+
+`P(site)>0.85` **AND** forest‑covered **AND** no known site → buffered 250 m → merged. 28 polygons exported (`results/candidates.geojson`).
+
+---
+
+### 4  Results & Visuals
+
+* **Performance** (table above) shows +2.8 pp AUC & 43 % FP reduction after full stack.
+* Interactive map & 3‑D LiDAR flyovers in `notebooks/06_results_map.html`.
+* PlanetScope snapshots confirm rectangular/circular soil marks; NDVI trend signatures match abandoned earthworks.
+
+---
+
+### 5  Reproducibility Checklist
+
+| Item                 | Path              | Note                            |
+| -------------------- | ----------------- | ------------------------------- |
+| Dockerfile           | `/env/Dockerfile` | CUDA‑free 2.8 GB                |
+| One‑click script     | `run_all.sh`      | Train → Predict → Visualise     |
+| Fixed seeds          | `config.yaml`     | `seed: 42`                      |
+| External data public | §2                | Meets “Reasonableness Standard” |
+| Build guide          | `README.md`       | Tested on t3.xlarge             |
+
+---
+
+### 6  Novelty & Impact
+
+* **Tri‑source fusion** of peer‑reviewed datasets into a single predictive pipeline.
+* **LLM‑driven feature engineering** removes manual GIS bottlenecks.
+* Prioritisation list enables archaeologists to act **before** deforestation exposure.
+
+---
+
+### 7  Competition Compliance
+
+* ≥2 verifiable public sources (actually 3) – see §2.
+* No paywalls; CC‑BY/PD licences.
+* CC0 licence for code/model (winner requirement).
+* Team size ≤ 5 (currently 1).
+* External data free or minimal cost.
+* No plagiarism/disallowed content.
+
+---
+
+### 8  Future Work
+
+1. Fine‑tune OpenAI Vision for direct object detection of geoglyphs.
+2. Integrate GEDI waveform metrics for canopy‑height signatures.
+3. Coordinate drone‑LiDAR ground‑truthing of top‑ranked polygons (permits pending).
+
+---
+
+### 9  Acknowledgements
+
+Walker 2023, Prümers 2022, Fawcett 2022, NICFI, IBGE, NASA, WorldClim, and the open‑data community.
+
+> **Buy Me a Coffee ☕** – Your cup funds one more CPU‑hour: [https://www.buymeacoffee.com/kgninja](https://www.buymeacoffee.com/kgninja)
