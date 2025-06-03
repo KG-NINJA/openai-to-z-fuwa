@@ -1,4 +1,8 @@
 # openai-to-z-fuwa
+## Abstract – OpenAI to Z Challenge Submission by KG-NINJA
+
+Guided by the silent discipline of a modern-day ninja, this research merges satellite NDVI analysis, ancient expedition texts, and geometric signal mapping to reveal unseen traces of Amazonian history. Like tracking a footprint in the mist, our primary candidate near Óbidos (-1.9348, -55.5153) emerged through vegetation anomalies and precise GeoJSON zoning. Drawing on the harmony between AI and nature, we used Google Earth Engine to detect subtle breaks in green density—clues to forgotten civilizations. Historical maps and native oral traditions acted as our scrolls, aligning with the shadows on the land. This method, tested across O1–O5 sites, is quiet but sharp—repeatable, scalable, and always respectful of the forest’s secrets. Every insight, like a thrown shuriken, is precise and intentional. The project is documented in full on GitHub, echoing the principle of open learning and collective skill. Our goal is not conquest but connection—to let AI serve as a silent ally in uncovering lost knowledge. In the shadows of data, we listen.
+
 
 # 🌳 From Forest to Forensics: Detecting Unnatural Vegetation with AI
 
