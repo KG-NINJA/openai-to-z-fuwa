@@ -5,8 +5,7 @@ on:
     - cron: '0 21 * * *'    # 毎日JST朝6時（日本時間調整。UTC 21:00 = JST 6:00）
   push:
     branches:
-      - master
-
+　　　 - main
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
