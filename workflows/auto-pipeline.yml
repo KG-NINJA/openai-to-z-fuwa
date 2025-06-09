@@ -2,32 +2,32 @@ name: OpenAI to Z Auto Pipeline
 
 on:
   schedule:
-    - cron: '0 21 * * *'    # 毎日JST朝6時（日本時間調整。UTC 21:00 = JST 6:00）
+    - cron: '0 21 * * *'
   push:
     branches:
-　　　 - main
+      - main
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-    - name: Run pipeline
-      run: python run_pipeline.py
+      - name: Run pipeline
+        run: python run_pipeline.py
 
-    - name: Commit & Push results
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
-        git commit -m "Auto update via GitHub Actions [skip ci]" || echo "Nothing to commit"
-        git push
+      - name: Commit & Push results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto update via GitHub Actions [skip ci]" || echo "Nothing to commit"
+          git push
