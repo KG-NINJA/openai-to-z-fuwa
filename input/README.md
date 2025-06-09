@@ -48,6 +48,7 @@ This project was born from that quiet gaze. Not all signals are in the data—so
 
 This project supports submission to Checkpoint #2 of the [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge/overview).
 
+<<<<<<< HEAD
 ---
 
 ## OpenAI to Z Challenge - Archaeological AI Exploration
@@ -96,3 +97,6 @@ This project explores the possibility that **intuitive perception—whether huma
 
 > Maybe we don’t always need to know *why* something feels important—sometimes we just need to follow it.
 tes
+=======
+test
+>>>>>>> e7190a2 (Trigger Actions by updating input/README.md)
