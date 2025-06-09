@@ -3,7 +3,7 @@ name: Auto Pipeline
 on:
   push:
     branches:
-      - master    # ここをmainにしたい場合はmainに
+      - main   # ここをmainにしたい場合はmainに
 
 jobs:
   build:
