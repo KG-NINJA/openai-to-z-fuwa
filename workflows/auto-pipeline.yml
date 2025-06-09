@@ -1,9 +1,5 @@
 name: OpenAI to Z Auto Pipeline
 
-defaults:
-  run:
-    working-directory: Z2interpreter
-
 on:
   push:
     branches: [main]
@@ -11,6 +7,10 @@ on:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Z2interpreter
+
     steps:
       - uses: actions/checkout@v4
 
