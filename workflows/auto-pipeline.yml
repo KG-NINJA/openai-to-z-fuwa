@@ -1,24 +1,18 @@
 name: OpenAI to Z Auto Pipeline
 
-# リポジトリ全体ではなく Z2interpreter フォルダをルートとして動かす
 defaults:
   run:
     working-directory: Z2interpreter
 
 on:
-  schedule:
-    - cron: '0 21 * * *'  # JST 朝 6:00 に毎日実行
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
