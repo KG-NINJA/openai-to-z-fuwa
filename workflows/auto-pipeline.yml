@@ -1,37 +1,7 @@
-name: OpenAI to Z Auto Pipeline
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  run-pipeline:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Z2interpreter
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Set Git Identity
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      - name: Run pipeline
-        run: python run_pipeline.py
-
       - name: Commit & Push results
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git diff --cached --quiet || git commit -m "🤖 Auto update via GitHub Actions"
+          git commit -m "Auto update analysis report (`date`)" || echo "Nothing to commit"
           git push
