@@ -1,3 +1,3 @@
-# OpenAI to Z 自動分析レポート
+# OpenAI to Z automatic analysis report
 
-- 解析日時:
+- Analysis date and time:
