@@ -1,70 +1,26 @@
-🚀 How to Auto-Generate Submission Reports Using AI
-This repository provides a reproducible workflow for generating Kaggle-ready Markdown reports from satellite NDVI analyses using a template and results.json.
-Key steps for full or semi-automated report generation (including AI auto-filling of summaries, interpretations, etc.):
 
-Step-by-step AI Automation Workflow
-Prepare your analysis output
+## 🚀 How to Auto-Generate Submission Reports Using AI
 
-Run your pipeline (e.g., run_analysis.py) to calculate key values (e.g., max_ndvi, candidate_count) and generate output files (ndvi_chart.png, geojson_file, etc.).
+This repository provides a reproducible workflow for generating Kaggle-ready Markdown reports from satellite NDVI analyses using a template and `results.json`.
 
-Write these values and file names to results.json.
+**Key steps for full or semi-automated report generation (including AI auto-filling of summaries, interpretations, etc.):**
 
-Auto-fill missing report sections using GPT (Codex/GPT-4o/ChatGPT etc.)
-
-For any fields in results.json that remain "N/A" (such as abstract, key_findings, interpretation, conclusion), use an LLM to auto-generate content.
-
-You can use the following prompt (for OpenAI, Claude, Gemini, or similar):
-
-Sample Prompt:
-
-yaml
-コピーする
-Below is a Markdown template for a Kaggle submission and a JSON object with placeholders ("N/A").
-For every key in the JSON that is "N/A", generate plausible content (AI summary, findings, interpretations, conclusions, etc.).
-Fill all fields, using the context and filled values where available, and return the completed JSON object only.
-
-Markdown template:
----
-# {site_name} NDVI Anomaly Detection Report
-...
-## Footnote
-{footnote}
 ---
 
-Partial JSON:
-{
-  "site_name": "Obidos South NDVI Analysis",
-  "abstract": "N/A",
-  "background": "N/A",
-  "methodology": "NDVI anomaly detection was performed using Landsat 8 imagery.",
-  "key_findings": "N/A",
-  "ndvi_chart": "o3_ndvi_chart.png",
-  "geojson_file": "o3_ndvi_candidates.geojson",
-  "interpretation": "N/A",
-  "conclusion": "N/A",
-  "generation_date": "2025-06-11 17:11",
-  "commit_hash": "a1b2c3d4",
-  "max_ndvi": 0.82,
-  "candidate_count": 4,
-  "footnote": "N/A"
-}
-Review and polish as needed
+### Step-by-step AI Automation Workflow
 
-(Optional) Edit or proofread the AI-generated text to match your research tone or competition requirements.
+1. **Prepare your analysis output**
+   - Run your pipeline (e.g., `run_analysis.py`) to calculate key values (e.g., `max_ndvi`, `candidate_count`) and generate output files (`ndvi_chart.png`, `geojson_file`, etc.).
+   - Write these values and file names to `results.json`.
 
-Generate the Markdown report
+2. **Auto-fill missing report sections using GPT (Codex/GPT-4o/ChatGPT etc.)**
+   - For any fields in `results.json` that remain `"N/A"` (such as `abstract`, `key_findings`, `interpretation`, `conclusion`), use an LLM to auto-generate content.
+   - You can use the following prompt (for OpenAI, Claude, Gemini, or similar):
 
-Run report_generator.py to combine template.md and the completed results.json into a submission-ready Markdown file (e.g., o3_report.md).
+<details>
+<summary>Sample AI Prompt</summary>
 
-Submit to Kaggle
 
-Ensure your output files (.md, .geojson, .png, etc.) follow competition requirements and submit!
-
-Tip:
-You can automate this entire flow with a single script, or handle steps 2–3 iteratively as you review each report.
-See prompts/auto_fill_example.txt for a reusable AI prompt example.
-
-You can copy-paste this section into your README, or place it after your project overview for clarity!
 # openai-to-z-fuwa
 ## Abstract – OpenAI to Z Challenge Submission by KG-NINJA
 
