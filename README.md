@@ -39,7 +39,7 @@ Partial JSON:
   "background": "N/A",
   "methodology": "NDVI anomaly detection was performed using Landsat 8 imagery.",
   "key_findings": "N/A",
-  "ndvi_chart": "o3_ndvi_chart.png",
+  "ndvi_chart": "o3_ndvi_zscore.png",
   "geojson_file": "o3_ndvi_candidates.geojson",
   "interpretation": "N/A",
   "conclusion": "N/A",
