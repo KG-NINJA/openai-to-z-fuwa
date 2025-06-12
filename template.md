@@ -1,22 +1,22 @@
-# {site_name}
+# {{ site_name }}
 
 ## Abstract
-{abstract}
+{{ abstract }}
 
 ## Background
-{background}
+{{ background }}
 
 ## Methodology
-{methodology}
+{{ methodology }}
 
 ## Key Findings
-{key_findings}
+{{ key_findings }}
 
 ## Visual Summary
-![NDVI Chart]({ndvi_chart})
+![NDVI Chart]({{ ndvi_chart }})
 
 ## Candidate Map
-Link: [{geojson_file}]({geojson_file})
+Link: [{{ geojson_file }}]({{ geojson_file }})
 
 ## Candidate Sites
 {% for site in sites %}
@@ -38,25 +38,25 @@ Link: [{geojson_file}]({geojson_file})
 {% endfor %}
 
 ## Interpretation
-{interpretation}
+{{ interpretation }}
 
 ## Conclusion
-{conclusion}
+{{ conclusion }}
 
 ## Project Philosophy
-{philosophy}
+{{ philosophy }}
 
 ## Empathy Statement
-{empathy_statement}
+{{ empathy_statement }}
 
 ## Personal Reflection
-{personal_reflection}
+{{ personal_reflection }}
 
 ## Humanity Perspective
-{humanity_perspective}
+{{ humanity_perspective }}
 
 ## AI Insight Assist
-- {ai_insight_assist}
+- {{ ai_insight_assist }}
 
 ## Footnote
-{footnote}
+{{ footnote }}
