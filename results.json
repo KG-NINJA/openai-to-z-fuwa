@@ -13,5 +13,25 @@
   "ndvi_chart": "o3_ndvi_chart.png",
   "personal_reflection": "Integrating intuition and technology brought unexpected joy to this research. My intuition about burial sites was inspired by an illustration of an ancient burial I once saw in a book. I realized that throughout human history, people tended to select burial grounds near their settlements, often in locations where the ground was easy to dig. As someone who frequently observes ancient Japanese kofun (burial mounds), this idea resonated with me even more deeply.",
   "philosophy": "The best discoveries come when science and empathy work together.",
-  "site_name": "Obidos South NDVI Analysis"
+  "site_name": "Obidos South NDVI Analysis",
+  "sites": [
+    {
+      "id": 1,
+      "name": "Candidate Site A",
+      "coords": {"lat": -1.920, "lon": -55.520},
+      "max_ndvi": 0.92,
+      "candidate_count": 12,
+      "historical_reference": "Explorer map notation of mound",
+      "serendipity_log": "Spotted unusual clearing while walking dogs",
+      "intuition_trace": "Dogs lingered near this area during walks",
+      "insight_log": "Overlaps with diary description"
+    }
+  ],
+  "additional_candidates": [
+    {
+      "name": "Secondary Site",
+      "coords": {"lat": -1.925, "lon": -55.530},
+      "reason": "Visible soil discoloration"
+    }
+  ]
 }
