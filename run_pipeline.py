@@ -19,7 +19,7 @@ def main():
     # 1. 解析の実行
     run_command("python run_analysis.py", desc="解析")
     # 2. レポート生成
-    run_command("python report_generator.py", desc="レポート生成")
+    run_command("python generate_markdown_report.py", desc="レポート生成")
 
 if __name__ == "__main__":
     print_and_log("===== OpenAI to Z 自動パイプライン開始 =====")

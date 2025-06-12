@@ -30,7 +30,7 @@ def main():
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    rendered = template.render(data)
+    rendered = template.render(**data)
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(rendered)
