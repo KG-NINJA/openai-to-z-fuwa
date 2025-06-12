@@ -13,7 +13,7 @@ We combined NDVI data, historic texts, and canine intuition for site selection.
 Key candidate overlaps both with satellite anomaly and old explorer map notes.
 
 ## Visual Summary
-![NDVI Chart](o3_ndvi_chart.png)
+![NDVI Chart](o3_ndvi_zscore.png)
 
 ## Candidate Map
 Link: [o3_ndvi_candidates.geojson](o3_ndvi_candidates.geojson)

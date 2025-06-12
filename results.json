@@ -10,7 +10,7 @@
   "interpretation": "This anomaly may indicate a previously undocumented settlement.",
   "key_findings": "Key candidate overlaps both with satellite anomaly and old explorer map notes.",
   "methodology": "We combined NDVI data, historic texts, and canine intuition for site selection.",
-  "ndvi_chart": "o3_ndvi_chart.png",
+  "ndvi_chart": "o3_ndvi_zscore.png",
   "personal_reflection": "Integrating intuition and technology brought unexpected joy to this research. My intuition about burial sites was inspired by an illustration of an ancient burial I once saw in a book. I realized that throughout human history, people tended to select burial grounds near their settlements, often in locations where the ground was easy to dig. As someone who frequently observes ancient Japanese kofun (burial mounds), this idea resonated with me even more deeply.",
   "philosophy": "The best discoveries come when science and empathy work together.",
   "site_name": "Obidos South NDVI Analysis",
