@@ -5,6 +5,13 @@ This repository provides a reproducible workflow for generating Kaggle-ready Mar
 **Key steps for full or semi-automated report generation (including AI auto-filling of summaries, interpretations, etc.):**
 
 ---
+## 🛠️ Development Notes & Testing
+
+- [x] Automated download of yearly median NDVI (MODIS, 2015–2024) for the Amazon basin using Google Earth Engine (`scripts/download_ndvi_amazon.py`)
+- [x] One-line install: `pip install -r requirements.txt`
+- [x] Analysis pipeline reproducible via `python run_pipeline.py`
+- [x] Unit test framework included (`python -m unittest discover`)
+- [!] Note: Network access to pypi.org or Google Earth Engine may be restricted in some environments.
 
 ### Step-by-step AI Automation Workflow
 
