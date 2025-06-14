@@ -8,7 +8,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install deps
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Python deps
+        run: pip install jinja2
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install npm deps
         run: npm install
-      - name: Run MCP Finalizer
+      - name: Run Finalizer
         run: node scripts/zlog_finalizer.js
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: zlog_final
+          path: outputs/zlog_final.pdf
