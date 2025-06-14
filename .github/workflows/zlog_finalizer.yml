@@ -1,0 +1,14 @@
+name: Final Z Log Submission
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install deps
+        run: npm install
+      - name: Run MCP Finalizer
+        run: node scripts/zlog_finalizer.js
