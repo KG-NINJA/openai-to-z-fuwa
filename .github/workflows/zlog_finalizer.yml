@@ -14,8 +14,8 @@ jobs:
           python-version: '3.11'
       - name: Install Python deps
         run: pip install jinja2
-      - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Install Pandoc and LaTeX
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base
       - name: Set up Node
         uses: actions/setup-node@v3
         with:

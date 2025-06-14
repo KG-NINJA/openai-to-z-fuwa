@@ -36,6 +36,7 @@ def generate_report():
         print(f'PDF generated at {PDF_PATH}')
     except Exception as e:
         print('PDF generation failed:', e)
+        raise
 
 
 if __name__ == '__main__':
