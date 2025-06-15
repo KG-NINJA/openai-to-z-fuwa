@@ -56,3 +56,6 @@ Partial JSON:
   "candidate_count": 4,
   "footnote": "N/A"
 }
+
+3. **Generate the final report**
+   - Run `python scripts/report_generator.py` to create `generated_report.md` and a PDF (if pandoc is installed).
