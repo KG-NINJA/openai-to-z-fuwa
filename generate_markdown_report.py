@@ -1,4 +1,5 @@
 import json
+import os
 import jinja2
 
 class NAUndefined(jinja2.Undefined):
@@ -15,7 +16,7 @@ class NAUndefined(jinja2.Undefined):
         return "N/A"
 
 TEMPLATE_PATH = "template.md"
-JSON_PATH = "results.json"
+JSON_PATH = os.path.join("output", "results.json")
 OUTPUT_PATH = "generated_report.md"
 
 def main():
