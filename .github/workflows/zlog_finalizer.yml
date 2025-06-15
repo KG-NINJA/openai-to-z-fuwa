@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: zlog_final
-          path: outputs/zlog_final.pdf
+          path: generated_report.pdf

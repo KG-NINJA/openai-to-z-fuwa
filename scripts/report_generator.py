@@ -4,10 +4,9 @@ import subprocess
 import jinja2
 
 TEMPLATE_PATH = os.path.join('templates', 'template.md')
-JSON_PATH = os.path.join('results', 'results.json')
-OUTPUT_DIR = 'outputs'
-MD_PATH = os.path.join(OUTPUT_DIR, 'zlog_final.md')
-PDF_PATH = os.path.join(OUTPUT_DIR, 'zlog_final.pdf')
+JSON_PATH = os.path.join('output', 'results.json')
+MD_PATH = 'generated_report.md'
+PDF_PATH = 'generated_report.pdf'
 
 
 def load_variables(path):
@@ -24,7 +23,6 @@ def render_markdown(template_path, variables):
 
 
 def generate_report():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
     data = load_variables(JSON_PATH)
     markdown = render_markdown(TEMPLATE_PATH, data)
     with open(MD_PATH, 'w', encoding='utf-8') as f:
@@ -36,7 +34,6 @@ def generate_report():
         print(f'PDF generated at {PDF_PATH}')
     except Exception as e:
         print('PDF generation failed:', e)
-        raise
 
 
 if __name__ == '__main__':

@@ -13,9 +13,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run generate_markdown_report.py
+      - name: Run report_generator.py
         run: |
-          python generate_markdown_report.py
+          python scripts/report_generator.py
 
       - name: Commit & Push results
         run: |

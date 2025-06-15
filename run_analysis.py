@@ -6,7 +6,7 @@ def run_analysis():
     candidate_count = 12
 
     # 保存先ディレクトリ
-    output_dir = "./output/images"
+    output_dir = os.path.join("output", "images")
     os.makedirs(output_dir, exist_ok=True)  # ここでフォルダを作成（なければ）
 
     img = Image.new("RGB", (400, 300), (100, 200, 150))
@@ -23,7 +23,9 @@ def run_analysis():
     }
 
     import json
-    with open("./output/results.json", "w") as f:
+    os.makedirs("output", exist_ok=True)
+    results_path = os.path.join("output", "results.json")
+    with open(results_path, "w") as f:
         json.dump(results, f, indent=2)
 
     print("Analysis done. Results saved to JSON and image generated.")
