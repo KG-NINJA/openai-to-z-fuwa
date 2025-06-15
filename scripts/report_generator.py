@@ -4,7 +4,7 @@ import subprocess
 import jinja2
 
 TEMPLATE_PATH = os.path.join('templates', 'template.md')
-JSON_PATH = os.path.join('outputs', 'results.json')
+JSON_PATH = os.path.join('output', 'results.json')
 MD_PATH = 'generated_report.md'
 PDF_PATH = 'generated_report.pdf'
 

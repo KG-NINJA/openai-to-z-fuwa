@@ -3,7 +3,7 @@ import json
 import os
 
 TEMPLATE_PATH = "template.md"
-OUTPUT_JSON = os.path.join("outputs", "results.json")
+OUTPUT_JSON = os.path.join("output", "results.json")
 
 def extract_placeholders(template_path):
     with open(template_path, "r", encoding="utf-8") as f:
@@ -25,7 +25,7 @@ def main():
         print("テンプレートに {placeholder} が見つかりませんでした。")
         return
     default_json = generate_default_json(placeholders)
-    os.makedirs("outputs", exist_ok=True)
+    os.makedirs("output", exist_ok=True)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(default_json, f, indent=2, ensure_ascii=False)
     print(f"{len(placeholders)} 個の項目を持つ '{OUTPUT_JSON}' を生成しました。")
