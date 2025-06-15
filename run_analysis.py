@@ -23,8 +23,8 @@ def run_analysis():
     }
 
     import json
-    os.makedirs("output", exist_ok=True)
-    results_path = os.path.join("output", "results.json")
+    os.makedirs("outputs", exist_ok=True)
+    results_path = os.path.join("outputs", "results.json")
     with open(results_path, "w") as f:
         json.dump(results, f, indent=2)
 

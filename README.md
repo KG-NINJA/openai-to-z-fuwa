@@ -17,7 +17,7 @@ This repository provides a reproducible workflow for generating Kaggle-ready Mar
 
 1. **Prepare your analysis output**
    - Run your pipeline (e.g., `run_analysis.py`) to calculate key values (e.g., `max_ndvi`, `candidate_count`) and generate output files (`ndvi_chart.png`, `geojson_file`, etc.).
-   - Write these values and file names to `output/results.json`.
+   - Write these values and file names to `outputs/results.json`.
 
 2. **Auto-fill missing report sections using GPT (Codex/GPT-4o/ChatGPT etc.)**
    - For any fields in `results.json` that remain `"N/A"` (such as `abstract`, `key_findings`, `interpretation`, `conclusion`), use an LLM to auto-generate content.
