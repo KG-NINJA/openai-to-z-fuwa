@@ -1,0 +1,26 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run generate_markdown_report.py
+        run: |
+          python generate_markdown_report.py
+
+      - name: Commit & Push results
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated_report.md
+          git commit -m "Auto update analysis report (`date`)" || echo "Nothing to commit"
+          git push

@@ -1,0 +1,29 @@
+name: Final Z Log Submission
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Python deps
+        run: pip install jinja2
+      - name: Install Pandoc and LaTeX
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-latex-base texlive-latex-recommended texlive-latex-extra
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Run Finalizer
+        run: node scripts/zlog_finalizer.js
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: zlog_final
+          path: outputs/zlog_final.pdf

@@ -1,0 +1,27 @@
+name: Validate template.md
+
+on:
+  push:
+    paths:
+      - "template.md"
+      - "tools/validate_template.py"
+  pull_request:
+    paths:
+      - "template.md"
+      - "tools/validate_template.py"
+
+jobs:
+  validate-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 🔧 Run template validation
+        run: |
+          python tools/validate_template.py template.md

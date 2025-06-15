@@ -1,8 +1,8 @@
-# openai-to-z-fuwa
-## Abstract – OpenAI to Z Challenge Submission by KG-NINJA
+## 🚀 How to Auto-Generate Submission Reports Using AI
 
-Guided by the silent discipline of a modern-day ninja, this research merges satellite NDVI analysis, ancient expedition texts, and geometric signal mapping to reveal unseen traces of Amazonian history. Like tracking a footprint in the mist, our primary candidate near Óbidos (-1.9348, -55.5153) emerged through vegetation anomalies and precise GeoJSON zoning. Drawing on the harmony between AI and nature, we used Google Earth Engine to detect subtle breaks in green density—clues to forgotten civilizations. Historical maps and native oral traditions acted as our scrolls, aligning with the shadows on the land. This method, tested across O1–O5 sites, is quiet but sharp—repeatable, scalable, and always respectful of the forest’s secrets. Every insight, like a thrown shuriken, is precise and intentional. The project is documented in full on GitHub, echoing the principle of open learning and collective skill. Our goal is not conquest but connection—to let AI serve as a silent ally in uncovering lost knowledge. In the shadows of data, we listen.
+This repository provides a reproducible workflow for generating Kaggle-ready Markdown reports from satellite NDVI analyses using a template and `results.json`.
 
+<<<<<<< HEAD:input/README.md
 
 # 🌳 From Forest to Forensics: Detecting Unnatural Vegetation with AI
 
@@ -47,3 +47,59 @@ This project was born from that quiet gaze. Not all signals are in the data—so
 * `amazon_ndvi_2023_c2_masked.tif`: NDVI with cloud masking applied; used for anomaly detection.
 
 This project supports submission to Checkpoint #2 of the [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge/overview).
+=======
+**Key steps for full or semi-automated report generation (including AI auto-filling of summaries, interpretations, etc.):**
+
+---
+## 🛠️ Development Notes & Testing
+
+- [x] Automated download of yearly median NDVI (MODIS, 2015–2024) for the Amazon basin using Google Earth Engine (`scripts/download_ndvi_amazon.py`)
+- [x] One-line install: `pip install -r requirements.txt`
+- [x] Analysis pipeline reproducible via `python run_pipeline.py`
+- [x] Unit test framework included (`python -m unittest discover`)
+- [!] Note: Network access to pypi.org or Google Earth Engine may be restricted in some environments.
+
+### Step-by-step AI Automation Workflow
+
+1. **Prepare your analysis output**
+   - Run your pipeline (e.g., `run_analysis.py`) to calculate key values (e.g., `max_ndvi`, `candidate_count`) and generate output files (`ndvi_chart.png`, `geojson_file`, etc.).
+   - Write these values and file names to `results.json`.
+
+2. **Auto-fill missing report sections using GPT (Codex/GPT-4o/ChatGPT etc.)**
+   - For any fields in `results.json` that remain `"N/A"` (such as `abstract`, `key_findings`, `interpretation`, `conclusion`), use an LLM to auto-generate content.
+   - You can use the following prompt (for OpenAI, Claude, Gemini, or similar):
+
+<details>
+<summary>Sample AI Prompt</summary>
+
+```text
+Below is a Markdown template for a Kaggle submission and a JSON object with placeholders ("N/A").
+For every key in the JSON that is "N/A", generate plausible content (AI summary, findings, interpretations, conclusions, etc.).
+Fill all fields, using the context and filled values where available, and return the completed JSON object only.
+
+Markdown template:
+---
+# {site_name} NDVI Anomaly Detection Report
+...
+## Footnote
+{footnote}
+---
+
+Partial JSON:
+{
+  "site_name": "Obidos South NDVI Analysis",
+  "abstract": "N/A",
+  "background": "N/A",
+  "methodology": "NDVI anomaly detection was performed using Landsat 8 imagery.",
+  "key_findings": "N/A",
+  "ndvi_chart": "o3_ndvi_chart.png",
+  "geojson_file": "o3_ndvi_candidates.geojson",
+  "interpretation": "N/A",
+  "conclusion": "N/A",
+  "generation_date": "2025-06-11 17:11",
+  "commit_hash": "a1b2c3d4",
+  "max_ndvi": 0.82,
+  "candidate_count": 4,
+  "footnote": "N/A"
+}
+>>>>>>> fcbe1eb07b9f56d6be76a348f3322c34bd9ea47c:README.md

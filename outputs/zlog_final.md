@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-\# Kaggle Submission Report
-
-
-
-\## Results Summary
-
-\- Maximum NDVI: {{max\_ndvi}}
-
-\- Number of Candidate Sites: {{candidate\_count}}
-
-
-
-!\[Candidate Map]({{image\_path}})
-
-
-
-=======
 # Obidos South NDVI Analysis
 
 ## Abstract
@@ -78,4 +60,3 @@ Empathy with ancient people can help humanity find unity across time.
 
 ## Footnote
 Auto-generated with the KG-NINJA Codex pipeline. #KGNINJA
->>>>>>> fcbe1eb07b9f56d6be76a348f3322c34bd9ea47c
