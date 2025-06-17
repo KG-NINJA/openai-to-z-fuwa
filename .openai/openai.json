@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name": "OpenAI to Z Fuwa",
+  "description": "An AI-assisted geospatial analysis project for detecting undiscovered Amazonian ruins using NDVI satellite imagery and Codex.",
+  "context_files": [
+    {
+      "globs": ["*.py", "*.md", "results/**/*.csv", "results/**/*.png", "results/**/*.geojson", "results/**/*.tif"],
+      "description": "Core scripts, reports, and geospatial analysis outputs"
+    },
+    {
+      "globs": ["AGENTS.md", "template.md", "input/README.md"],
+      "description": "Prompt engineering, report generation logic, and methodology documentation"
+    }
+  ]
+}
