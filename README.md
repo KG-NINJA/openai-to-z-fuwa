@@ -23,6 +23,38 @@ The ultimate goal is to validate this approach through tangible discoveries, and
 
 ## 📀 Workflow & Implementation
 
+## 📍 Discovered Candidate Sites
+
+The following five candidate regions (O1–O5) were analyzed using NDVI anomaly detection and cross-referenced with historical data:
+
+| ID | Region Description                     | Coordinates (Lat, Lon) | Status                  |
+| -- | -------------------------------------- | ---------------------- | ----------------------- |
+| O1 | Forest plateau northeast of Manaus     | `-2.7985, -59.9557`    | Under review            |
+| O2 | Dense vegetation bend near Purus River | `-3.4761, -65.1212`    | NDVI anomaly found      |
+| O3 | Clearing SE of Óbidos, Pará            | `-1.9348, -55.5153`    | **Strong candidate** 🏺 |
+| O4 | Terrain transition near Itaituba       | `-4.2619, -56.0125`    | Pending confirmation    |
+| O5 | Hill shadow anomaly near Xingu River   | `-3.2130, -52.1524`    | Tentative site          |
+
+> **Note:** O3 (Obidos South) exhibits a geometric vegetation pattern consistent with ceremonial land use. Both NDVI and soil conditions align with known burial site patterns.
+
+![Candidate Region Mask - O3](../o3_candidates_mask.png)
+
+![NDVI Overlay – Site O3 (jet colormap)](../o3_ndvi_overlay_jet.png)
+
+## 📍 Discovered Candidate Sites
+
+The following five candidate regions (O1–O5) were analyzed using NDVI anomaly detection and cross-referenced with historical data:
+
+| ID | Region Description                     | Coordinates (Lat, Lon) | Status                  |
+| -- | -------------------------------------- | ---------------------- | ----------------------- |
+| O1 | Forest plateau northeast of Manaus     | `-2.7985, -59.9557`    | Under review            |
+| O2 | Dense vegetation bend near Purus River | `-3.4761, -65.1212`    | NDVI anomaly found      |
+| O3 | Clearing SE of Óbidos, Pará            | `-1.9348, -55.5153`    | **Strong candidate** 🏺 |
+| O4 | Terrain transition near Itaituba       | `-4.2619, -56.0125`    | Pending confirmation    |
+| O5 | Hill shadow anomaly near Xingu River   | `-3.2130, -52.1524`    | Tentative site          |
+
+> **Note:** O3 (Obidos South) exhibits a geometric vegetation pattern consistent with ceremonial land use. Both NDVI and soil conditions align with known burial site patterns.
+
 1. **NDVI Anomaly Detection:** Satellite imagery analyzed to highlight unusual vegetation patterns.
 2. **Cross-Referencing:** Combining GeoJSON geographic data, historic explorer records, and satellite imagery analytics.
 3. **Intuitive Insights:** Incorporating insights from pet behavior (Fuwa and Coco) as inspirational cues.
