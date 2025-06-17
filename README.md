@@ -21,7 +21,7 @@ The ultimate goal is to validate this approach through tangible discoveries, and
 * **Automation:** Markdown report generation, automated code workflows
 * **Collaboration & Documentation:** GitHub with MCP integration readiness
 
-## 📐 Workflow & Implementation
+## 📀 Workflow & Implementation
 
 1. **NDVI Anomaly Detection:** Satellite imagery analyzed to highlight unusual vegetation patterns.
 2. **Cross-Referencing:** Combining GeoJSON geographic data, historic explorer records, and satellite imagery analytics.
@@ -46,51 +46,49 @@ This repository aims not only to pioneer new methods in AI-assisted archaeology 
 
 **Explore the unknown. Trust intuition. Embrace technology. Open the gate.**
 
+---
 
 # 🗂 Codex-Powered File Organizer for Kaggle Projects
 
-> “Let Codex clean your desk, so your mind can explore the jungle.”  
-> — KG_NINJA
+> “Let Codex clean your desk, so your mind can explore the jungle.”
+> — KG\_NINJA
 
 ## 🔍 Overview
 
 Managing a multi-modal Kaggle project like **OpenAI to Z** means handling messy directories:
 
-- 🛰 Satellite images (NDVI, RGB)
-- 📊 Analytical results (GeoTIFF, CSV, PNG)
-- 🧠 AI-generated reports (Markdown, PDF)
-- 🧪 Code & scripts (Python, CLI)
+* 🚁 Satellite images (NDVI, RGB)
+* 📊 Analytical results (GeoTIFF, CSV, PNG)
+* 🧠 AI-generated reports (Markdown, PDF)
+* 🧪 Code & scripts (Python, CLI)
 
 To maintain clarity, I used **OpenAI Codex** to create an intelligent file organizer that:
 
-- 📦 Sorts by semantic file type
-- 📝 Renames files with readable conventions
-- 📂 Moves them into logical subfolders
-- 🧠 Requires no manual drag-and-drop
+* 📦 Sorts by semantic file type
+* 📝 Renames files with readable conventions
+* 📂 Moves them into logical subfolders
+* 🧠 Requires no manual drag-and-drop
 
 ---
 
 ## ⚙️ Prerequisites
 
-| Requirement | Description |
-|------------|-------------|
-| 🧠 Codex access | ChatGPT Pro, Copilot Workspace, or API |
-| 🐍 Python ≥ 3.10 | Local runtime for execution |
-| 📁 `/results/` folder | Where raw outputs are dumped |
+| Requirement           | Description                            |
+| --------------------- | -------------------------------------- |
+| 🧠 Codex access       | ChatGPT Pro, Copilot Workspace, or API |
+| 🐍 Python ≥ 3.10      | Local runtime for execution            |
+| 📁 `/results/` folder | Where raw outputs are dumped           |
 
 Example starting structure:
+
+```
 results/
 ├── o3_ndvi_zscore.png
 ├── o3_ndvi_candidates.geojson
 ├── obidos_zscore_stats.csv
 ├── ndvi_stack_raw.tif
 ├── report.md
-
-python
-コピーする
-編集する
-
----
+```
 
 ## ✨ Codex Prompt
 
@@ -105,11 +103,6 @@ Rules:
 - *.tif → raw_data/
 Also, rename any file starting with 'o3_' → 'ObidosSouth_'
 """
-Codex auto-generates the following script:
-
-python
-コピーする
-編集する
 import os, shutil
 
 file_map = {
@@ -128,11 +121,13 @@ for fname in os.listdir(root):
         os.makedirs(new_dir, exist_ok=True)
         new_name = fname.replace('o3_', 'ObidosSouth_')
         shutil.move(os.path.join(root, fname), os.path.join(new_dir, new_name))
-✅ Output Structure
+```
+
+## ✅ Output Structure
+
 After running the Codex-generated script:
 
-コピーする
-編集する
+```
 results/
 ├── visuals/
 │   └── ObidosSouth_ndvi_zscore.png
@@ -144,32 +139,35 @@ results/
 │   └── ObidosSouth_report.md
 ├── raw_data/
 │   └── ObidosSouth_ndvi_stack_raw.tif
-🧪 Bonus Codex Tasks
+```
+
+## 🧪 Bonus Codex Tasks
+
 You can prompt Codex to do even more:
 
-"Summarize all CSVs into one table."
-
-"Generate README.md describing each result."
-
-"Find orphaned files not referenced in reports."
+* "Summarize all CSVs into one table."
+* "Generate README.md describing each result."
+* "Find orphaned files not referenced in reports."
 
 Let Codex automate the boring parts — so you can focus on uncovering lost cities. 🏛
 
-🤖 Why Use Codex?
-Benefit	Description
-🔍 Clarity	Know exactly where every file lives
-📜 Structure	Supports reproducibility and clean commits
-⛩ Harmony	Intuition + automation = creative flow
-🛠 Automation	Avoid grunt work, think big
+## 🧠 Why Use Codex?
 
-🔗 Resources
-GitHub repo: openai-to-z-fuwa
+| Benefit       | Description                                |
+| ------------- | ------------------------------------------ |
+| 🔍 Clarity    | Know exactly where every file lives        |
+| 📜 Structure  | Supports reproducibility and clean commits |
+| ⛩ Harmony     | Intuition + automation = creative flow     |
+| 🛠 Automation | Avoid grunt work, think big                |
 
-Challenge: OpenAI to Z - Kaggle
+## 🔗 Resources
 
-Author: @KG_NINJA_JAPAN
+* GitHub repo: `openai-to-z-fuwa`
+* Challenge: [OpenAI to Z - Kaggle](https://www.kaggle.com/competitions/openai-to-z-challenge)
+* Author: `@KG_NINJA_JAPAN`
 
-🙏 Epilogue
+## 🙏 Epilogue
+
 Even in chaotic data jungles, order is possible—with a little help from Codex and some ninja intuition.
 
-#KGNINJA #OpenAItoZ #ArchaeologyAI #Codex
+\#KGNINJA #OpenAItoZ #ArchaeologyAI #Codex
