@@ -126,6 +126,10 @@ To supplement intuitive and visual analyses, a RandomForest ML model was trained
 
 > *O3 stands out as the most likely location of archaeological significance according to both human intuition and AI analysis.*
 
+> “The collection of Brazilian archaeology of the National Museum comprised more than 100,000 objects … covering the history of Pre‑Columbian Brazil in a very comprehensive manner and sheltering some of the most important material records related to Brazilian archaeology.”
+> — National Museum of Brazil :contentReference[oaicite:6]{index=6}
+
+This highlights the richness and research depth of Pre‑Columbian Amazonian archaeology, providing a solid scientific foundation for our NDVI+ML exploration approach.
 
 Automatically organizes messy output folders from a Kaggle project.
 
