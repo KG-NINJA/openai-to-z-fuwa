@@ -110,5 +110,22 @@ Five candidate locations (O1–O5) were identified through NDVI anomaly detectio
 
 ### Purpose
 
+### 🧠 AI-Predicted Ruin-likeness Score
+
+To supplement intuitive and visual analyses, a RandomForest ML model was trained using NDVI statistics, geomorphic patterns, and heuristic features for each candidate site. The resulting "ruin-likeness scores" highlight the most promising locations:
+
+| Site | AI Ruin-likeness Score |
+|------|------------------------|
+| O1   | 0.10                   |
+| O2   | 0.08                   |
+| O3   | 0.72                   |
+| O4   | 0.09                   |
+| O5   | 0.33                   |
+
+![Predicted Ruin-likeness Score for Each Candidate Site](ruin_likeness_scores.png)
+
+> *O3 stands out as the most likely location of archaeological significance according to both human intuition and AI analysis.*
+
+
 Automatically organizes messy output folders from a Kaggle project.
 
