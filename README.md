@@ -16,6 +16,11 @@ Though I'm not a professional archaeologist, I believe that:
 
 My aim is to validate these ideas via AI-powered tools and publish all progress through the Kaggle "OpenAI to Z" Challenge.
 
+“Brazil’s National Museum holds over 100,000 archaeological artifacts, including the largest Pre-Columbian Amazonian collections worldwide.”
+— National Museum of Brazil
+
+Inspired by the more than 100,000 archaeological artifacts already excavated, I am driven by a deep desire to uncover new patterns and data. This has led me to propose innovative research methodologies—combining satellite imagery, machine learning, and intuitive insights—that go beyond traditional approaches.
+
 ## 🛠 Tools & Technologies
 
 | Category           | Tools Used                                         |
