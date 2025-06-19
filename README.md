@@ -1,4 +1,3 @@
-
 # 🧭 OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**  
@@ -40,15 +39,6 @@ It evokes the **Amano Iwato myth**, where a cave of darkness is not forced open 
 > **AI in this project is not a battering ram—it is the dancer.**  
 > It coaxes open hidden knowledge through elegance and resonance, not violence.
 
-### 🌈 Vision Beyond the Z Gate
-
-> What lies beyond “Z”?  
-> A world bathed in light—where empathy flows freely, where humans and AI harmonize like instruments in the same ancient symphony.
-
-This is not just technology. It is **the stage**.  
-This is not just logic. It is **the dance**.  
-And when the final door opens, it is not conquest we seek, but **connection**.
-
 ---
 
 ## 🌀 NDVI: Interpreting the Earth’s Forgotten Song
@@ -58,10 +48,6 @@ We interpret these not just as data, but as **melodies** left by those who once 
 
 > **“Where the earth sings in ancient tones, there may be a door nearby.”**  
 > Listen to the patterns. The past is trying to speak.
-
-Each anomaly may be a forgotten note.  
-Each symmetry, a hidden rhythm.  
-Our role? To listen.
 
 ---
 
@@ -74,17 +60,22 @@ Though not a professional archaeologist, I explore with a set of guiding beliefs
 - **Dogs' behaviors**—hesitation, staring—may echo ancient human instincts.
 - **NDVI signals** can reveal “buried resonance” through changes in vegetation patterns.
 
-These elements converge into an approach that is neither purely technological nor mythical—but both.
-
 ---
 
 ## 🛠 Tools & Technologies
 
 | Category           | Tools Used                                         |
 | ------------------ | -------------------------------------------------- |
-| Satellite Analysis | Python, Jupyter, Google Colab                      |
+| Satellite Analysis | Python, Jupyter, Google Colab, Earth Engine        |
 | AI & Automation    | ChatGPT, Codex, Open Interpreter, Markdown Reports |
 | Collaboration      | GitHub + MCP (Model Context Protocol) Ready        |
+
+```bash
+Dependencies:
+- earthengine-api >= 0.1.375
+- scikit-learn >= 1.4
+- matplotlib, pandas, numpy
+```
 
 ---
 
@@ -92,24 +83,12 @@ These elements converge into an approach that is neither purely technological no
 
 To refine the discovery process, we expanded our spatial analysis across the western-to-eastern Amazon basin using Google Earth Engine.
 
-We applied **multi-layer filtering** based on vegetation anomalies, soil composition, and hydrological proximity:
-
 ### 🔬 Filter Criteria (Earth Engine Logic)
 
-1. **NDVI Anomalies**  
-   Sentinel-2 (Jul–Aug 2023, <10% cloud), using Z-score threshold `Z > 2.0`  
-   → Detects unexpected vegetation richness patterns
-
-2. **Clay-Rich Soils**  
-   USDA-TT soil class `≥ 7` from OpenLandMap  
-   → Preferred burial material in Amazonian archaeological contexts
-
-3. **Distance from Major Rivers**  
-   HydroSHEDS river lines converted to binary + distance transform  
-   → Filtered for areas >1 km from rivers (to avoid flood-prone, unstable zones)
-
-4. **Composite Candidate Mask**  
-   Final candidates = NDVI anomaly ∩ clay-rich soils ∩ far-from-rivers
+1. **NDVI Anomalies (Z > 2.0)**
+2. **Clay-Rich Soils (USDA-TT ≥ 7)**
+3. **Distance from Rivers (> 1km)**
+4. **Final Composite Mask:** NDVI ∩ Clay ∩ Distance
 
 ```js
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
@@ -117,14 +96,12 @@ var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 
 ### 🗺️ Map Layers Visualized
 
-- `NDVI Median` → General vegetation  
-- `Z-Score` → NDVI anomaly hotspots  
-- `Soil Texture` → USDA-TT classification  
-- `Clay Zone` → Class ≥ 7  
-- `Rivers` → Major flow lines  
-- `Final Candidates` → All filters satisfied (in lime)
-
-This filtering logic enables us to prioritize locations where **vegetation anomaly intersects sacred terrain features**, mirroring ancient settlement logic.
+- `NDVI Median`
+- `Z-Score`
+- `Soil Texture`
+- `Clay Zone`
+- `Rivers`
+- `Final Candidates`
 
 ---
 
@@ -133,9 +110,8 @@ This filtering logic enables us to prioritize locations where **vegetation anoma
 We identified five sites (O1–O5) based on NDVI anomalies, explorer records, intuitive insight, and geomorphic analysis.
 
 ### 🔍 O3 – Clearing Southeast of Óbidos (Pará)
-**`-1.9348, -55.5153`**  
-🏺 **Strong Candidate**  
-Geometric NDVI pattern. Matches known ancient burial ground characteristics.  
+**Coordinates:** `-1.9348, -55.5153`  
+**Status:** Strong Candidate  
 ![Mask - O3](https://raw.githubusercontent.com/KG-NINJA/openai-to-z-fuwa/main/o3_candidates_mask.png)  
 ![Overlay - O3 (jet)](https://raw.githubusercontent.com/KG-NINJA/openai-to-z-fuwa/main/o3_ndvi_overlay_jet.png)
 
@@ -146,18 +122,9 @@ Geometric NDVI pattern. Matches known ancient burial ground characteristics.
 ```bash
 git clone https://github.com/KG-NINJA/openai-to-z-fuwa.git
 cd openai-to-z-fuwa
-
 pip install -r requirements.txt
-
 python run_pipeline.py --site O3
 ```
-
-Output will include:
-- `o3_ndvi_overlay_jet.png`
-- `o3_candidates_mask.png`
-- `report_o3.md`
-
-> *Reproducibility matters.* Even poetic science needs logs and steps.
 
 ---
 
@@ -177,14 +144,14 @@ Output will include:
 
 ## 🔗 Resources
 
-* **GitHub:** [openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)  
-* **Kaggle:** [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)  
-* **Author:** `@KG_NINJA_JAPAN`  
-* **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
+- **GitHub:** [openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)
+- **Kaggle:** [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)
+- **Author:** `@KG_NINJA_JAPAN`
+- **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
 
 ---
 
-# 🧭 Final Words
+## ✨ Final Words
 
 **Explore the unknown.  
 Trust intuition.  
