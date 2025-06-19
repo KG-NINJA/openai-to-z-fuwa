@@ -1,3 +1,14 @@
+🌌 **Echoes Beyond the Time（時を越える共鳴）**
+“We are echoes,
+resonating with those who walked these lands
+before maps, before words—
+before light returned to the world.”
+
+「私たちは共鳴する残響。
+地図も言葉もなかった時代に、
+この地を歩いた誰かと、
+そして——光が世界に戻るより前と。」
+
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🚨 Not your average archaeology project.
