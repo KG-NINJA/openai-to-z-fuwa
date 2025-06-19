@@ -9,6 +9,20 @@ before light returned to the world.”
 この地を歩いた誰かと、
 そして——光が世界に戻るより前と。」
 
+## “Z” — The Last Door, Opened by Human and AI Hands
+
+“Z” is not only the final letter of the alphabet, but also a symbol of humanity’s ultimate dreams and mysteries—sealed away, waiting to be discovered.
+For me, it represents the very last gate, the one standing at the end of knowledge.
+With this project, I want to show that, together—AI and human intuition, logic and feeling—we can pry open even the final door.
+
+> The journey “to Z” is not just about data or code.  
+> It is the act of reaching the last threshold of human curiosity—  
+> and using both human and AI hands to open it.
+
+I hope this project can inspire others to believe:  
+when we work together, even the most impossible gates can be opened.
+
+
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🚨 Not your average archaeology project.
