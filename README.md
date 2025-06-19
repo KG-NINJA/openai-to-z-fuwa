@@ -23,6 +23,8 @@ Though I'm not a professional archaeologist, I believe that:
 * **Indigenous Amazonian practices** favored earth burial, making soil and vegetation key clues.
 * **Dogs’ intuitive responses** may mirror ancient human perception—possibly hinting at long-forgotten places.
 
+Additionally, this project is grounded in a hypothesis of shared human empathy across time and space: that even across vast distances and different historical periods, we are all human beings—capable of intuitively sensing and interpreting remnants of the past. By re-centering our approach through human perspective rather than solely satellite data, we hope to reconnect with forgotten narratives embedded in the landscape.
+
 My aim is to validate these ideas via AI-powered tools and publish all progress through the Kaggle "OpenAI to Z" Challenge.
 
 ## 🛠 Tools & Technologies
