@@ -1,9 +1,5 @@
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
-🚨 What if a Shiba Inu could help discover ancient ruins via satellite data?  
-🐕 This project blends NDVI, AI tools, and canine intuition to challenge archaeological conventions.  
-🌍 Beyond science, it’s a story of memory, instinct, and opening the gates of the unknown.
-
 ## 🌿 Project Overview
 
 This project seeks to uncover undiscovered archaeological sites in the Amazon rainforest by combining advanced satellite imagery analysis (primarily NDVI), AI technologies (ChatGPT, Codex, Open Interpreter), and human intuition—including insights from my dogs' behavior. It poses a bold question:
