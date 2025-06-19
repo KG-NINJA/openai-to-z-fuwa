@@ -29,7 +29,11 @@ Not knowing the original etymology, I bring a new, outsider’s perspective:
 Z is humanity’s final door—the last mystery.  
 In this project, AI and human intuition join hands to open it.
 
+## 🌏 An Outsider's Insight
 
+Sometimes, not knowing the exact etymology or cultural background allows for new interpretations and insights. As a Japanese participant, my outsider's intuition guided me to see the "Z" as hands opening doors—something perhaps less obvious to native speakers.
+
+I believe this fresh perspective is exactly what's needed in today's globally connected, interdisciplinary AI research.
 
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
