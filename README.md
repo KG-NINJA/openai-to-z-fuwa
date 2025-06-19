@@ -1,12 +1,6 @@
----
+🐾 Two Fuwas resonate:  
+al-Khwārizmī (algorithm) × Fuwa (intuition)
 
-## 🐾 A Tale of Two Fuwas
-
-> 🐕 **The spirit of this project dances between two 'Fuwas' — al-Khwārizmī, father of algorithms, and Fuwa the Shiba Inu, whose instincts guided us toward forgotten paths.**  
-> Logic and intuition, ancient and modern, algorithm and animal — resonating in harmony.
-
-> 🐾 **このプロジェクトには 2 つの「フワ」が共鳴しています —— アルゴリズムの父 アル・フワーリズミーと、直感で未知を指し示した柴犬ふわ。**  
-> 論理と直感、古代と現代、計算と生命が響き合います。
 
 ---🌌 **Echoes Beyond the Time（時を越える共鳴）**
 
