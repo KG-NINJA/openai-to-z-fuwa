@@ -1,5 +1,9 @@
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
+🚨 Not your average archaeology project.
+🐕 Guided by intuition, dogs, and NDVI.
+🌍 Real ruins, real data, real AI.
+
 ## 🌿 Project Overview
 
 This project seeks to uncover undiscovered archaeological sites in the Amazon rainforest by combining advanced satellite imagery analysis (primarily NDVI), AI technologies (ChatGPT, Codex, Open Interpreter), and human intuition—including insights from my dogs' behavior. It poses a bold question:
