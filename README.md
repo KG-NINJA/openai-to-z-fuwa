@@ -88,6 +88,46 @@ These elements converge into an approach that is neither purely technological no
 
 ---
 
+## 🌍 Expanded Geo-Analysis via Earth Engine
+
+To refine the discovery process, we expanded our spatial analysis across the western-to-eastern Amazon basin using Google Earth Engine.
+
+We applied **multi-layer filtering** based on vegetation anomalies, soil composition, and hydrological proximity:
+
+### 🔬 Filter Criteria (Earth Engine Logic)
+
+1. **NDVI Anomalies**  
+   Sentinel-2 (Jul–Aug 2023, <10% cloud), using Z-score threshold `Z > 2.0`  
+   → Detects unexpected vegetation richness patterns
+
+2. **Clay-Rich Soils**  
+   USDA-TT soil class `≥ 7` from OpenLandMap  
+   → Preferred burial material in Amazonian archaeological contexts
+
+3. **Distance from Major Rivers**  
+   HydroSHEDS river lines converted to binary + distance transform  
+   → Filtered for areas >1 km from rivers (to avoid flood-prone, unstable zones)
+
+4. **Composite Candidate Mask**  
+   Final candidates = NDVI anomaly ∩ clay-rich soils ∩ far-from-rivers
+
+```js
+var finalCandidate = highZ.and(clayZone).and(farFromRiver);
+```
+
+### 🗺️ Map Layers Visualized
+
+- `NDVI Median` → General vegetation  
+- `Z-Score` → NDVI anomaly hotspots  
+- `Soil Texture` → USDA-TT classification  
+- `Clay Zone` → Class ≥ 7  
+- `Rivers` → Major flow lines  
+- `Final Candidates` → All filters satisfied (in lime)
+
+This filtering logic enables us to prioritize locations where **vegetation anomaly intersects sacred terrain features**, mirroring ancient settlement logic.
+
+---
+
 ## 🗺️ Candidate Site Overview
 
 We identified five sites (O1–O5) based on NDVI anomalies, explorer records, intuitive insight, and geomorphic analysis.
