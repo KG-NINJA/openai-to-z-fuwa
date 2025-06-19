@@ -22,6 +22,14 @@ With this project, I want to show that, together—AI and human intuition, logic
 I hope this project can inspire others to believe:  
 when we work together, even the most impossible gates can be opened.
 
+## Why “Z”? — Opening the Last Door
+
+As a Japanese researcher, I see the letter “Z” not just as the last letter of the alphabet, but as two hands pushing open a stone gate—like in the ancient Amano Iwato myth.
+Not knowing the original etymology, I bring a new, outsider’s perspective:  
+Z is humanity’s final door—the last mystery.  
+In this project, AI and human intuition join hands to open it.
+
+
 
 # OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
