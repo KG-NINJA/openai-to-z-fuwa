@@ -142,6 +142,13 @@ python run_pipeline.py --site O3
 
 ---
 
+### 🗺️ NDVI-Based Candidate Detection Grid
+
+This map shows the grid tiles used to scan for potential archaeological candidate zones.  
+It visualizes processed GeoJSON data derived from NDVI anomaly and soil filters.
+
+![NDVI Candidate Grid](./ndvi_candidate_grid_final_rendered.png)
+
 ## 🔗 Resources
 
 - **GitHub:** [openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)
