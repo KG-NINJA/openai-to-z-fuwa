@@ -94,37 +94,14 @@ To refine the discovery process, we expanded our spatial analysis across the wes
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 ```
 
----
+### 🗺️ Map Layers Visualized
 
-### 🧪 Earth Engine Candidate Detection Logic
-
-> This section outlines the full detection logic implemented in the [Kaggle Notebook](https://www.kaggle.com/code/kgninja/an-interactive-amazon-candidate-explorer), allowing reproducibility and parameter tuning.
-
-#### Detection Logic Steps:
-
-```js
-// 1. Amazon region rectangle
-var amazon = ee.Geometry.Rectangle([-75, -10, -50, 0]);
-
-// 2. NDVI (Sentinel-2: July–August 2023, low cloud)
-// ... [省略して表示]
-
-// 10. Final Candidate Sites
-var finalCandidate = highZ.and(clayZone).and(farFromRiver);
-
-// 11. Visualization
-Map.addLayer(finalCandidate.updateMask(finalCandidate), {palette:['lime']}, 'Final Candidates');
-```
-
-#### Key Parameters:
-
-| Filter        | Condition                         |
-|---------------|-----------------------------------|
-| NDVI Anomaly  | Z > 2.0                            |
-| Clay Zone     | USDA-TT Soil Class ≥ 7            |
-| River Distance| > 1000 meters (HydroSHEDS)        |
-
-> You can modify Z-score thresholds, soil class cutoff, or river proximity to tune detection sensitivity.
+- `NDVI Median`
+- `Z-Score`
+- `Soil Texture`
+- `Clay Zone`
+- `Rivers`
+- `Final Candidates`
 
 ---
 
