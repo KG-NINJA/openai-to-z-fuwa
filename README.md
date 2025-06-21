@@ -85,6 +85,36 @@ Each toponym may hint at forgotten rituals, mounds, or lost sites—waiting for 
 Why hide your ninja moves? Let’s build open, reproducible pipelines—because the real treasure is sharing methods!
 https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243
 
+🌾 Toponyms as Living Memory: Decoding Place Names
+In Amazonia, many place names—especially those from Indigenous languages—are more than labels.
+They are echoes of ancient knowledge, sacred geography, and unwritten memory.
+
+Even local residents may not know the hidden meaning behind a name.
+Yet that meaning may carry spatial clues from ancestors who sensed the land in ways we no longer do.
+
+Examples like Teso dos Bichos (“Mound of Animals”) and Teso do Piri (“Piri Mound”) may hint at ceremonial mounds or forgotten settlements.
+
+By analyzing NDVI anomalies around such names, we hypothesize that:
+
+Toponyms encode buried site metadata.
+
+These names, passed down unknowingly, preserve spatial memory of sacred sites.
+
+AI + toponym filtering could unlock access to ruins that even archaeologists have overlooked.
+
+This project treats names as clues—not just linguistic, but archaeological.
+
+“What if the past encoded itself not in stone, but in sound?”
+
+🔠 Toponym Analysis Pipeline (Future Work)
+We plan to integrate:
+
+Indigenous toponym corpora
+
+Natural Language Processing (NLP) over historical place names
+
+Cross-referencing with NDVI + soil data layers
+
 ## 🌍 Expanded Geo-Analysis via Earth Engine
 
 To refine the discovery process, we expanded our spatial analysis across the western-to-eastern Amazon basin using Google Earth Engine.
