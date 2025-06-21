@@ -153,7 +153,7 @@ It visualizes processed GeoJSON data derived from NDVI anomaly and soil filters.
 
 - **GitHub:** [openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)
 - **Kaggle:** [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)
-- **Author:** `@KG_NINJA_JAPAN`
+- **Author:** `@KG_NINJA_JAPAN`Kyoto-born, trained in intuition. Onmyoji vibes, Amazon dreams.
 - **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
 
 ---
