@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿affine==2.4.0
 aiohappyeyeballs==2.6.1
 aiohttp==3.12.8
@@ -165,7 +164,6 @@ xmod==1.8.1
 yarl==1.20.0
 yaspin==3.1.0
 zipp==3.22.0
-=======
 ﻿affine==2.4.0
 aiohappyeyeballs==2.6.1
 aiohttp==3.12.8
@@ -332,4 +330,3 @@ xmod==1.8.1
 yarl==1.20.0
 yaspin==3.1.0
 zipp==3.22.0
->>>>>>> fcbe1eb07b9f56d6be76a348f3322c34bd9ea47c
