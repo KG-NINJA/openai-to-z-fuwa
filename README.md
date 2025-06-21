@@ -185,7 +185,7 @@ This map presents a **preliminary visualization** of potential archaeological si
 
 While some of the site markers may be **tentative or incomplete**, they serve as vital indicators of where future exploration could focus. The overlay of geospatial signals and indigenous place names reflects a hybrid approach that blends **remote sensing** with **ethnolinguistic inference**.
 
-![Amazon Map](amazon_ruin_candidates_cleaned_map.png)
+![Amazon Map](https://github.com/KG-NINJA/openai-to-z-fuwa/commit/11a7cf666001d80f2fa30cbd4858e2d4e12812af)
 
 > **Note:** This map is a work-in-progress. Locations shown are candidate points, not confirmed ruins. Labels and categories are subject to refinement as further data becomes available.  
 > Still, it offers a glimpse into how AI-assisted archaeology can direct attention toward **historically significant but overlooked regions**.
