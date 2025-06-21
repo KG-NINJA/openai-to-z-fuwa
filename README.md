@@ -90,30 +90,33 @@ In Amazonia, many place names—especially those from Indigenous languages—are
 They are echoes of ancient knowledge, sacred geography, and unwritten memory.
 
 Even local residents may not know the hidden meaning behind a name.
-Yet that meaning may carry spatial clues from ancestors who sensed the land in ways we no longer do.
+Yet within those names, forgotten geospatial wisdom may persist—
+passed down not as maps, but as melodies of place.
 
-Examples like Teso dos Bichos (“Mound of Animals”) and Teso do Piri (“Piri Mound”) may hint at ceremonial mounds or forgotten settlements.
+Place names like Teso dos Bichos (“Mound of Animals”) or Teso do Piri (“Piri Mound”) may signal ceremonial mounds or sacred zones.
+Though no ruins are documented there today, the name itself may encode ancient decisions—choices made by hands now long gone.
 
-By analyzing NDVI anomalies around such names, we hypothesize that:
+By overlaying NDVI anomalies on these toponyms, we hypothesize:
 
-Toponyms encode buried site metadata.
+Toponyms may encode spatial metadata about past human activity.
 
-These names, passed down unknowingly, preserve spatial memory of sacred sites.
+These names, transmitted unconsciously, could serve as hidden site markers.
 
-AI + toponym filtering could unlock access to ruins that even archaeologists have overlooked.
+AI × toponym filtering may reveal forgotten archaeological zones—even to locals.
 
-This project treats names as clues—not just linguistic, but archaeological.
+What if the past didn’t vanish, but hid in language?
+What if sound, not stone, carried the coordinates of memory?
 
-“What if the past encoded itself not in stone, but in sound?”
+🔠 Toponym Analysis Pipeline (Planned Expansion)
+We aim to develop an AI-assisted pipeline that includes:
 
-🔠 Toponym Analysis Pipeline (Future Work)
-We plan to integrate:
+Indigenous toponym corpora, extracted from oral history and maps
 
-Indigenous toponym corpora
+NLP tools to detect recurring spatial motifs (e.g., "teso", "serra", "igarapé")
 
-Natural Language Processing (NLP) over historical place names
+Cross-matching with NDVI, soil type, and hydrological proximity
 
-Cross-referencing with NDVI + soil data layers
+Scoring system to evaluate “toponymic archaeological potential” (TAP score)
 
 ## 🌍 Expanded Geo-Analysis via Earth Engine
 
