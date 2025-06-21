@@ -78,6 +78,12 @@ Dependencies:
 ```
 
 ---
+🥷 Place Name Reading Ninjutsu
+We scan indigenous Amazonian place names (like Teso dos Bichos and Teso do Piri) and overlay their coordinates with NDVI anomaly maps in Google Earth Engine.
+Each toponym may hint at forgotten rituals, mounds, or lost sites—waiting for explorers bold enough to look beneath the label.
+
+Why hide your ninja moves? Let’s build open, reproducible pipelines—because the real treasure is sharing methods!
+https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243
 
 ## 🌍 Expanded Geo-Analysis via Earth Engine
 
