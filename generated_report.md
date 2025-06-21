@@ -1,4 +1,3 @@
-# {{ site_name }}
 
 ## Abstract
 {{ abstract }}
@@ -59,5 +58,4 @@ Link: [{{ geojson_file }}]({{ geojson_file }})
 - {{ ai_insight_assist }}
 
 ## Footnote
-{{ footnote }}
 
