@@ -179,6 +179,19 @@ python run_pipeline.py --site O3
 
 ---
 
+## 🗺️ Preliminary Map of Amazonian Ruin Candidates
+
+This map presents a **preliminary visualization** of potential archaeological sites in the Amazon, derived from a composite analysis of **NDVI anomalies** and culturally significant **toponyms**.
+
+While some of the site markers may be **tentative or incomplete**, they serve as vital indicators of where future exploration could focus. The overlay of geospatial signals and indigenous place names reflects a hybrid approach that blends **remote sensing** with **ethnolinguistic inference**.
+
+![Amazon Map](amazon_ruin_candidates_cleaned_map.png)
+
+> **Note:** This map is a work-in-progress. Locations shown are candidate points, not confirmed ruins. Labels and categories are subject to refinement as further data becomes available.  
+> Still, it offers a glimpse into how AI-assisted archaeology can direct attention toward **historically significant but overlooked regions**.
+
+📌 *Updated:* 2025-06-21
+
 ### 🗾️ NDVI-Based Candidate Detection Grid
 
 This map shows the grid tiles used to scan for potential archaeological candidate zones.
