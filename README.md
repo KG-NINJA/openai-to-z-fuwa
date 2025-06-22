@@ -153,7 +153,9 @@ We identified five key sites (O1–O5):
 git clone https://github.com/KG-NINJA/openai-to-z-fuwa.git
 cd openai-to-z-fuwa
 pip install -r requirements.txt
+# Run analysis for a specific site
 python run_pipeline.py --site O3
+# Consolidated results saved to outputs/results.json
 ```
 
 ---
@@ -190,9 +192,16 @@ python run_pipeline.py --site O3
 
    ```bash
    pip install -r requirements.txt
+   # Process all default sites
    python run_pipeline.py
    ```
-3. **Review results:** Find outputs in the `output/` directory.
+
+   To analyze a single site:
+
+   ```bash
+   python run_pipeline.py --site O3
+   ```
+3. **Review results:** Consolidated results appear in `outputs/results.json` and images in `output/images/`.
 
 ⚠️ **Note:** Outputs are demonstrative and require field validation.
 
