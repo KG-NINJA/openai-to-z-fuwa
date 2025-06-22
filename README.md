@@ -75,6 +75,15 @@ Dependencies:
 - matplotlib, pandas, numpy
 ```
 
+### 📦 Installation
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ---
 
 ## 🥷 Place Name Ninjutsu
