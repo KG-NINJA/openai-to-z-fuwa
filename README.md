@@ -206,7 +206,7 @@ python run_pipeline.py --site O3
 **Dance before the gate.**
 **Let the light return to the world.**
 
-*KG\_NINJA — Walking with Fuwa, listening to the past.*
+*KG\_NINJA — Walking with Fuwa and Coco listening to the past.*
 🪐 Beyond the End
 
 This research is not a conclusion. It is a resonance.
