@@ -207,3 +207,21 @@ python run_pipeline.py --site O3
 **Let the light return to the world.**
 
 *KG\_NINJA — Walking with Fuwa, listening to the past.*
+🪐 Beyond the End
+
+This research is not a conclusion. It is a resonance.
+
+Not a final chapter, but an open invitation.
+
+For in every corner of the world, there lives a seeker—
+one who listens.
+One who remembers.
+One who walks with quiet steps toward the unseen door.
+
+And someday,
+with light in their heart and algorithm in hand,
+they will find their Z—
+and open it.
+
+「Z」は終わりではない。始まりへの鍵。
+それを開くのは、世界中の“あなた”です。
