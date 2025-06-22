@@ -1,4 +1,4 @@
-# 🗭 OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
+# 🌭 OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
@@ -6,14 +6,14 @@
 
 ---
 
-🌌 **Echoes Beyond the Time（時を越える共鳴）**
+🌌 **Echoes Beyond Time（時を越える共鳴）**
 
 > “We are echoes,
 > resonating with those who walked these lands
 > before maps, before words—
 > before light returned to the world.”
 
-> 「私たちは共鳴する残響。
+> 「私たちは共鳴する殊音。
 > 地図も言葉もなかった時代に、
 > この地を歩いた誰かと、
 > そして—光が世界に戻るより前と。」
@@ -46,7 +46,7 @@ NDVI maps reveal subtle patterns—**melodies** left behind by past civilization
 
 ---
 
-## 🧐 Hypothesis
+## 🤮 Hypothesis
 
 I explore guided by these intuitive beliefs:
 
@@ -91,7 +91,7 @@ Amazonian place names often hold encoded geographical and cultural knowledge:
 
 ---
 
-### 🔠 Toponym Analysis Pipeline (Planned)
+### 🛀 Toponym Analysis Pipeline (Planned)
 
 A future pipeline will integrate:
 
@@ -116,7 +116,7 @@ Spatial analyses utilize Google Earth Engine:
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 ```
 
-### 🗘️ Map Layers
+### 🖘️ Map Layers
 
 * NDVI Median, Z-Score
 * Soil Texture, Clay Zone
@@ -124,7 +124,7 @@ var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 
 ---
 
-## 🗌 Candidate Site Overview
+## 🗼 Candidate Site Overview
 
 We identified five key sites (O1–O5):
 
@@ -135,7 +135,7 @@ We identified five key sites (O1–O5):
 
 ---
 
-## 🔁 Reproducibility Guide
+## 🔀 Reproducibility Guide
 
 ```bash
 git clone https://github.com/KG-NINJA/openai-to-z-fuwa.git
@@ -162,7 +162,17 @@ python run_pipeline.py --site O3
 
 This repository includes a reproducible pipeline for archaeological detection using satellite imagery.
 
-### **How to Use**
+### 📄 Visual Examples
+
+**NDVI Composite Map with Candidate Markers**
+
+![Candidate Composite Map](https://files.oaiusercontent.com/file-LWZ4mAwLhnkHxaMSwn3kxA)
+
+**NDVI Z-Score Heatmap (Site O4)**
+
+![NDVI Z-score Map](https://files.oaiusercontent.com/file-UFtaEMM9Ycas3nwyJP5wkx)
+
+### ✨ How to Use
 
 1. **Prepare input:** CSV coordinates or direct script input.
 2. **Run pipeline:**
