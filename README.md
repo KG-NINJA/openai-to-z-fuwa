@@ -1,4 +1,4 @@
-# 🌭 OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
+# 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
@@ -6,7 +6,8 @@
 
 ---
 
-🌌 **Echoes Beyond Time（時空を越える共鳴）**
+<details>
+<summary>🌌 <strong>Echoes Beyond Time（時を越える共鳴）</strong></summary>
 
 > “We are echoes,
 > resonating with those who walked these lands
@@ -17,6 +18,8 @@
 > 地図も言葉もなかった時代に、
 > この地を歩いた誰かと、
 > そして—光が世界に戻るより前と。」
+
+</details>
 
 ---
 
@@ -46,7 +49,7 @@ NDVI maps reveal subtle patterns—**melodies** left behind by past civilization
 
 ---
 
-## 🤮 Hypothesis
+## 🧐 Hypothesis
 
 I explore guided by these intuitive beliefs:
 
@@ -74,7 +77,7 @@ Dependencies:
 
 ---
 
-🥷 **Place Name Ninjutsu**
+## 🥷 Place Name Ninjutsu
 
 We analyze indigenous Amazonian toponyms (e.g., Teso dos Bichos, Teso do Piri), overlaying them on NDVI anomaly maps to uncover potential ceremonial sites.
 
@@ -91,7 +94,7 @@ Amazonian place names often hold encoded geographical and cultural knowledge:
 
 ---
 
-### 🛀 Toponym Analysis Pipeline (Planned)
+### 🔠 Toponym Analysis Pipeline (Planned)
 
 A future pipeline will integrate:
 
@@ -116,7 +119,7 @@ Spatial analyses utilize Google Earth Engine:
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 ```
 
-### 🖘️ Map Layers
+### 🗘️ Map Layers
 
 * NDVI Median, Z-Score
 * Soil Texture, Clay Zone
@@ -124,7 +127,7 @@ var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 
 ---
 
-## 🗼 Candidate Site Overview
+## 🗌 Candidate Site Overview
 
 We identified five key sites (O1–O5):
 
@@ -135,7 +138,7 @@ We identified five key sites (O1–O5):
 
 ---
 
-## 🔀 Reproducibility Guide
+## 🔁 Reproducibility Guide
 
 ```bash
 git clone https://github.com/KG-NINJA/openai-to-z-fuwa.git
@@ -158,19 +161,18 @@ python run_pipeline.py --site O3
 
 ---
 
-📚 **Pipeline Outputs**
-
-This repository includes a reproducible pipeline for archaeological detection using satellite imagery.
-
-### 📄 Visual Examples
+<details>
+<summary>📚 <strong>Pipeline Outputs & Visual Examples</strong></summary>
 
 **NDVI Composite Map with Candidate Markers**
 
-![Candidate Composite Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/o4_ndvi_zscore.png)
+![Candidate Composite Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/Screenshot%202025-06-20%2018.19.13.png)
 
 **NDVI Z-Score Heatmap (Site O4)**
 
-![NDVI Z-score Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/Screenshot%202025-06-20%2018.19.13.png)
+![NDVI Z-score Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/o4_ndvi_zscore.png)
+
+</details>
 
 ### ✨ How to Use
 
@@ -203,3 +205,5 @@ This repository includes a reproducible pipeline for archaeological detection us
 **Embrace AI.**
 **Dance before the gate.**
 **Let the light return to the world.**
+
+*KG\_NINJA — Walking with Fuwa, listening to the past.*
