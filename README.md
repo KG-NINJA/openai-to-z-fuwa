@@ -1,7 +1,7 @@
 # 🗭 OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
-al-Khwārizmī (algorithm) × Fuwa (intuition)
+**al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
 *Fuwa's footsteps become the rhythm of the algorithm.*
 
 ---
@@ -13,7 +13,7 @@ al-Khwārizmī (algorithm) × Fuwa (intuition)
 > before maps, before words—
 > before light returned to the world.”
 
-> 「私たちは共鳴する殏響。
+> 「私たちは共鳴する残響。
 > 地図も言葉もなかった時代に、
 > この地を歩いた誰かと、
 > そして—光が世界に戻るより前と。」
@@ -22,53 +22,48 @@ al-Khwārizmī (algorithm) × Fuwa (intuition)
 
 ## 🌿 Project Overview
 
-This project aims to uncover undiscovered archaeological sites in the Amazon rainforest using NDVI satellite imagery, AI tools (ChatGPT, Codex, Open Interpreter), and deeply human intuition—including insights sparked by the quiet behavior of dogs.
+This project seeks to uncover hidden archaeological sites in the Amazon rainforest by fusing NDVI satellite imagery, AI technology (ChatGPT, Codex, Open Interpreter), and intuitive insights—including observations inspired by canine behavior.
 
-> **Can amateurs discover ancient ruins in the AI era by fusing intuition, satellite data, and technology?**
+> **Can amateurs uncover ancient ruins by blending intuition, satellite data, and AI?**
 
-Inspired by the vast collections of the Brazilian National Museum and grounded in the belief that ancient places still call out to us, this project represents a unique blend of technological precision and emotional resonance.
+Inspired by the Brazilian National Museum's collections, this project uniquely blends technology with emotional resonance, trusting ancient places still communicate to us today.
 
 ---
 
 ## 🔑 Why “Z”? — Opening the Final Door
 
-The letter "Z" is not just the last letter of the alphabet—it is the last gate.
-For me, a Japanese researcher, "Z" resembles two hands gently pushing open a massive stone door.
-It evokes the **Amano Iwato myth**, where a cave of darkness is not forced open by brute strength, but coaxed into revealing light by the graceful **dance and music** of divine beings.
+"Z" symbolizes not merely the end, but the final gateway. As a Japanese researcher, I see it as two hands gently pushing open a massive stone door. This imagery reflects the **Amano Iwato myth**, in which darkness yields to gentle dance and music, not brute force.
 
-> **AI in this project is not a battering ram—it is the dancer.**
-> It coaxes open hidden knowledge through elegance and resonance, not violence.
+> **AI is not a battering ram—it is the dancer, gracefully unlocking hidden knowledge.**
 
 ---
 
-## 🌀 NDVI: Interpreting the Earth’s Forgotten Song
+## 🌀 NDVI: Interpreting Earth’s Forgotten Song
 
-NDVI maps reveal more than vegetation—they trace **invisible patterns**, curves, and clusters…
-We interpret these not just as data, but as **melodies** left by those who once walked here.
+NDVI maps reveal subtle patterns—**melodies** left behind by past civilizations.
 
-> **“Where the earth sings in ancient tones, there may be a door nearby.”**
-> Listen to the patterns. The past is trying to speak.
+> **“Where the earth sings ancient tones, a hidden door awaits.”**
 
 ---
 
 ## 🧐 Hypothesis
 
-Though not a professional archaeologist, I explore with a set of guiding beliefs:
+I explore guided by these intuitive beliefs:
 
-* **Burial sites** are not random; they reflect sacred logic.
-* **Amazonian cultures** favored earth and vegetation-based burial, leaving subtle clues.
-* **Dogs' behaviors**—hesitation, staring—may echo ancient human instincts.
-* **NDVI signals** can reveal “buried resonance” through changes in vegetation patterns.
+* Burial sites reflect sacred logic.
+* Amazonian burial rituals favored subtle earth disturbances.
+* Dogs' behaviors may echo ancient instincts.
+* NDVI anomalies may reveal buried archaeological signatures.
 
 ---
 
 ## 🛠 Tools & Technologies
 
-| Category           | Tools Used                                         |
-| ------------------ | -------------------------------------------------- |
-| Satellite Analysis | Python, Jupyter, Google Colab, Earth Engine        |
-| AI & Automation    | ChatGPT, Codex, Open Interpreter, Markdown Reports |
-| Collaboration      | GitHub + MCP (Model Context Protocol) Ready        |
+| Category           | Tools                                                |
+| ------------------ | ---------------------------------------------------- |
+| Satellite Analysis | Python, Jupyter, Google Colab, Google Earth Engine   |
+| AI & Automation    | ChatGPT, Codex, Open Interpreter, Markdown Reporting |
+| Collaboration      | GitHub + MCP (Model Context Protocol)                |
 
 ```bash
 Dependencies:
@@ -79,80 +74,64 @@ Dependencies:
 
 ---
 
-🥷 Place Name Reading Ninjutsu
-We scan indigenous Amazonian place names (like Teso dos Bichos and Teso do Piri) and overlay their coordinates with NDVI anomaly maps in Google Earth Engine.
-Each toponym may hint at forgotten rituals, mounds, or lost sites—waiting for explorers bold enough to look beneath the label.
+🥷 **Place Name Ninjutsu**
 
-Why hide your ninja moves? Let’s build open, reproducible pipelines—because the real treasure is sharing methods!
-[https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243](https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243)
+We analyze indigenous Amazonian toponyms (e.g., Teso dos Bichos, Teso do Piri), overlaying them on NDVI anomaly maps to uncover potential ceremonial sites.
 
-### 🌾 Toponyms as Living Memory: Decoding Place Names
+> Open methods reveal true treasure—shared discovery.
 
-In Amazonia, many place names—especially those from Indigenous languages—are more than labels.
-They are **echoes of ancient knowledge**, **sacred geography**, and **unwritten memory**.
+[View Earth Engine Script](https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243)
 
-> Even local residents may not know the hidden meaning behind a name.
-> Yet within those names, **forgotten geospatial wisdom** may persist—
-> passed down not as maps, but as melodies of place.
+### 🌾 Toponyms: Living Memory & Hidden Knowledge
 
-Place names like **Teso dos Bichos** (“Mound of Animals”) or **Teso do Piri** (“Piri Mound”) may signal ceremonial mounds or sacred zones.
-Though no ruins are documented there today, the name itself may encode ancient decisions—**choices made by hands now long gone**.
+Amazonian place names often hold encoded geographical and cultural knowledge:
 
-By overlaying NDVI anomalies on these toponyms, we hypothesize:
-
-* Toponyms may **encode spatial metadata** about past human activity.
-* These names, **transmitted unconsciously**, could serve as **hidden site markers**.
-* **AI × toponym filtering** may reveal forgotten archaeological zones—even to locals.
-
-> What if the past didn’t vanish, but hid in language?
-> What if sound, not stone, carried the coordinates of memory?
-
-#### 🔠 Toponym Analysis Pipeline (Planned Expansion)
-
-We aim to develop an AI-assisted pipeline that includes:
-
-* **Indigenous toponym corpora**, extracted from oral history and maps
-* **NLP tools** to detect recurring spatial motifs (e.g., "teso", "serra", "igarapé")
-* **Cross-matching** with NDVI, soil type, and hydrological proximity
-* **Scoring system** to evaluate “toponymic archaeological potential” (TAP score)
+* Indigenous names may hint at lost rituals or sacred sites.
+* Overlaying these toponyms with NDVI anomalies could identify archaeological zones invisible even to local communities.
 
 ---
 
-## 🌍 Expanded Geo-Analysis via Earth Engine
+### 🔠 Toponym Analysis Pipeline (Planned)
 
-To refine the discovery process, we expanded our spatial analysis across the western-to-eastern Amazon basin using Google Earth Engine.
+A future pipeline will integrate:
 
-### 🔬 Filter Criteria (Earth Engine Logic)
+* Indigenous oral histories and mapping
+* NLP analysis of recurring spatial terms
+* NDVI, soil, and hydrological cross-referencing
+* Archaeological potential scoring (TAP score)
+
+---
+
+## 🌍 Geo-Analysis with Earth Engine
+
+Spatial analyses utilize Google Earth Engine:
+
+### 🔬 Earth Engine Filtering Logic
 
 1. **NDVI Anomalies (Z > 2.0)**
-2. **Clay-Rich Soils (USDA-TT ≥ 7)**
-3. **Distance from Rivers (> 1km)**
-4. **Final Composite Mask:** NDVI ∩ Clay ∩ Distance
+2. **Clay-rich soils (USDA-TT ≥ 7)**
+3. **Distance from rivers (>1 km)**
 
 ```js
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 ```
 
-### 🗘️ Map Layers Visualized
+### 🗘️ Map Layers
 
-* `NDVI Median`
-* `Z-Score`
-* `Soil Texture`
-* `Clay Zone`
-* `Rivers`
-* `Final Candidates`
+* NDVI Median, Z-Score
+* Soil Texture, Clay Zone
+* Rivers, Final Candidates
 
 ---
 
 ## 🗌 Candidate Site Overview
 
-We identified five sites (O1–O5) based on NDVI anomalies, explorer records, intuitive insight, and geomorphic analysis.
+We identified five key sites (O1–O5):
 
-### 🔍 O3 – Clearing Southeast of Óbidos (Pará)
+### 🔍 O3 – Southeast of Óbidos (Pará)
 
-**Coordinates:** `-1.9348, -55.5153`
-**Status:** Strong Candidate
-\\
+* Coordinates: `-1.9348, -55.5153`
+* **Status:** Strong Candidate
 
 ---
 
@@ -178,92 +157,39 @@ python run_pipeline.py --site O3
 | O5   | 0.33     |
 
 ---
-📚 Example Outputs – KG NINJA Ruin Candidate Pipeline
-This repository includes a reproducible pipeline for automatically detecting potential archaeological ruins in remote regions, based on satellite imagery and geospatial analysis.
-Below are sample outputs generated by the system. These are for demonstration purposes and do not confirm the existence of archaeological remains.
 
-1. NDVI Z-score Map Example
-This figure shows an NDVI Z-score heatmap, highlighting areas where vegetation patterns significantly deviate from the regional mean. Such anomalies can indicate past human activity or buried features.
+📚 **Pipeline Outputs**
 
+This repository includes a reproducible pipeline for archaeological detection using satellite imagery.
 
-2. Candidate Site Markers on Composite Map
-Red markers indicate sample locations automatically selected by the pipeline as high-potential ruin candidates, based on multi-layer geospatial criteria.
+### **How to Use**
 
+1. **Prepare input:** CSV coordinates or direct script input.
+2. **Run pipeline:**
 
-How to Use
-Prepare Input:
+   ```bash
+   pip install -r requirements.txt
+   python run_pipeline.py
+   ```
+3. **Review results:** Find outputs in the `output/` directory.
 
-Provide a CSV file of coordinates, or specify regions of interest directly in the pipeline script.
+⚠️ **Note:** Outputs are demonstrative and require field validation.
 
-Run Pipeline:
-
-Install dependencies from requirements.txt.
-
-Execute python run_pipeline.py to analyze the specified locations.
-
-The script will output:
-
-NDVI/Z-score maps
-
-Candidate marker overlays
-
-A JSON/Markdown report with predicted "ruin likelihood" scores and explanations
-
-Review Results:
-
-All generated figures and reports can be found in the output/ directory.
-
-⚠️ Important
-Sample images above are for demonstration only.
-Actual archaeological confirmation requires fieldwork and expert validation.
-
-The pipeline is fully open-source and modular—users can adapt it for their own study regions or datasets.
-
-For Researchers and Contributors
-Contributions and comparative analyses are welcome!
-
-For full technical details, see docs/ and the code comments.
-
-Issues and feature requests can be submitted via GitHub Issues.
-
-*If you use this pipeline or images in your work, please cite this repository and reference the project authors.
-
-### 🗾️ NDVI-Based Candidate Detection Grid
-
-This map shows the grid tiles used to scan for potential archaeological candidate zones.
-It visualizes processed GeoJSON data derived from NDVI anomaly and soil filters.
+---
 
 ## 🔗 Resources
 
-* **GitHub:** [openai-to-z-fuwa](https://github.com/KG-NINJA/openai-to-z-fuwa)
-* **Kaggle:** [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)
-* **Author:** `@KG_NINJA_JAPAN`
-  Kyoto-born, trained in intuition. Onmyoji vibes, Amazon dreams.
+* [GitHub Repository](https://github.com/KG-NINJA/openai-to-z-fuwa)
+* [Kaggle Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)
+* **Author:** `@KG_NINJA_JAPAN` *(Kyoto-born, trained in intuition, Onmyoji vibes, Amazon dreams.)*
 * **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
 
 ---
 
 ## ✨ Final Words
 
-**Explore the unknown.**
+**Explore boldly.**
 **Trust intuition.**
-**Embrace technology.**
+**Embrace AI.**
 **Dance before the gate.**
-**And let the light return to the world.**
-
-After finding merge conflicts and incomplete test discovery in the repository, I rolled up my sleeves and tackled each issue:
-
-Cleaned up all merge artifacts in scripts and templates
-
-Fixed requirements.txt so pip install would work without errors
-
-Repaired and unified the pipeline and report generator scripts (now with Japanese status messages!)
-
-Validated everything by running the test suite
-
-Result?
-All tests pass, reports are generated, and the repo is 100% clean.
-
-Sometimes, the real job is just “make it work”—and that’s what separates a casual coder from a real engineer.
-
-#AI #engineering #OpenAItoZ #progress
+**Let the light return to the world.**
