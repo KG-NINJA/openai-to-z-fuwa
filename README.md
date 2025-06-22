@@ -147,6 +147,22 @@ pip install -r requirements.txt
 python run_pipeline.py --site O3
 ```
 
+### Earth Engine Authentication
+
+Before using scripts that access Google Earth Engine, authenticate with your
+user account:
+
+```bash
+earthengine authenticate
+```
+
+Alternatively, set the path to a service account JSON key via the
+`EE_SERVICE_ACCOUNT_FILE` environment variable:
+
+```bash
+export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
+```
+
 ---
 
 ## 📊 AI-Predicted Ruin-likeness Score
