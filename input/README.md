@@ -69,7 +69,6 @@ This is a time where **organic chaos and digital clarity**, when joined, usher i
 
 This repository provides a reproducible workflow for generating Kaggle-ready Markdown reports from satellite NDVI analyses using a template and `results.json`.
 
-<<<<<<< HEAD:input/README.md
 
 # 🌳 From Forest to Forensics: Detecting Unnatural Vegetation with AI
 
@@ -114,8 +113,6 @@ This project was born from that quiet gaze. Not all signals are in the data—so
 * `amazon_ndvi_2023_c2_masked.tif`: NDVI with cloud masking applied; used for anomaly detection.
 
 This project supports submission to Checkpoint #2 of the [OpenAI to Z Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge/overview).
-=======
-**Key steps for full or semi-automated report generation (including AI auto-filling of summaries, interpretations, etc.):**
 
 ---
 ## 🛠️ Development Notes & Testing
@@ -169,4 +166,6 @@ Partial JSON:
   "candidate_count": 4,
   "footnote": "N/A"
 }
->>>>>>> fcbe1eb07b9f56d6be76a348f3322c34bd9ea47c:README.md
+
+```
+</details>

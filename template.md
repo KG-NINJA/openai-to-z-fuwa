@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-\# Kaggle Submission Report
-
-
-
-\## Results Summary
-
-\- Maximum NDVI: {{max\_ndvi}}
-
-\- Number of Candidate Sites: {{candidate\_count}}
-
-
-
-!\[Candidate Map]({{image\_path}})
-
-
-
-=======
 # {{ site_name }}
 
 ## Abstract
@@ -78,4 +60,3 @@ Link: [{{ geojson_file }}]({{ geojson_file }})
 
 ## Footnote
 {{ footnote }}
->>>>>>> 7bb991142f0583c7ee1ed4d61c5948db254524bd
