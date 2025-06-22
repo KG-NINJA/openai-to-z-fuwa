@@ -1,4 +1,5 @@
 import os
+
 import re
 import json
 import logging
@@ -75,3 +76,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.csv, args.out)
+
