@@ -166,11 +166,11 @@ This repository includes a reproducible pipeline for archaeological detection us
 
 **NDVI Composite Map with Candidate Markers**
 
-![Candidate Composite Map](https://files.oaiusercontent.com/file-LWZ4mAwLhnkHxaMSwn3kxA)
+![Candidate Composite Map]()
 
 **NDVI Z-Score Heatmap (Site O4)**
 
-![NDVI Z-score Map](https://files.oaiusercontent.com/file-UFtaEMM9Ycas3nwyJP5wkx)
+![NDVI Z-score Map](Screenshot 2025-06-20 18.19.13.png)
 
 ### ✨ How to Use
 
