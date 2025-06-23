@@ -112,6 +112,12 @@ A future pipeline will integrate:
 * NDVI, soil, and hydrological cross-referencing
 * Archaeological potential scoring (TAP score)
 
+### 🌟 New: Automated Toponym & Legend Insights
+
+The pipeline now queries OpenStreetMap within a ~10 km radius for place names
+hinting at ruins. These toponyms are summarized and sent to GPT for a short
+poetic interpretation in the final Markdown report.
+
 ---
 
 ## 🌍 Geo-Analysis with Earth Engine
@@ -183,25 +189,27 @@ python run_pipeline.py --site O3
 
 ![NDVI Z-score Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/o4_ndvi_zscore.png)
 
+**Example Toponymic Insight**
+
+```markdown
+## Toponymic and Local-Legend Insights
+- Monte dos Mortos (2 km away) — Could mark an ancient burial mound.
+```
+
 </details>
 
 ### ✨ How to Use
 
-1. **Prepare input:** CSV coordinates or direct script input.
+1. **Prepare input:** provide latitude and longitude.
 2. **Run pipeline:**
 
    ```bash
    pip install -r requirements.txt
-   # Process all default sites
-   python run_pipeline.py
+   python -m openai_to_z.run_pipeline --lat -2.1 --lon -55.6 --site-id obidos
    ```
 
-   To analyze a single site:
-
-   ```bash
-   python run_pipeline.py --site O3
-   ```
-3. **Review results:** Consolidated results appear in `outputs/results.json` and images in `output/images/`.
+   Disable toponym search with `--no-include-toponyms` if desired.
+3. **Review results:** each site has a folder under `output/` containing `results.json` and `report.md`.
 
 ⚠️ **Note:** Outputs are demonstrative and require field validation.
 
