@@ -33,36 +33,43 @@ flowchart LR
     C --> D[send_summaries_to_discord.py]
     D --> E[Discord Channel]
 ```
+- **No single point of failure:**  
+  Network issues or missing dependencies never halt the process.  
+  Logs provide full traceability for skipped steps.
 
-🔄 How to Use Automated Discord Notifications
-Generate summaries as usual:
+---
 
+## 🔄 How to Use Automated Discord Notifications
 
-python generate_site_summaries.py
-Send results to Discord:
+1. **Generate summaries as usual:**
+   ```bash
+   python generate_site_summaries.py
+   ```
+2. **Send results to Discord:**
+   ```bash
+   python send_summaries_to_discord.py --webhook <your_discord_webhook_url>
+   ```
+   Or, set the webhook as an environment variable:
+   ```bash
+   export DISCORD_WEBHOOK_URL=<your_discord_webhook_url>
+   python send_summaries_to_discord.py
+   ```
 
+---
 
-python send_summaries_to_discord.py --webhook <your_discord_webhook_url>
-Or, set the webhook as an environment variable:
+## 🧠 Codex/AI-Assisted Engineering
 
-
-export DISCORD_WEBHOOK_URL=<your_discord_webhook_url>
-python send_summaries_to_discord.py
-🧠 Codex/AI-Assisted Engineering
-Recent improvements—including robust error handling, mock-based testing, and the Discord integration—were co-designed and code-reviewed with OpenAI Codex/ChatGPT.
+Recent improvements—including robust error handling, mock-based testing, and the Discord integration—were **co-designed and code-reviewed with OpenAI Codex/ChatGPT**.  
 This project demonstrates an AI-native engineering workflow: every automation and enhancement is reproducible, explainable, and open to review.
 
-🛡️ What Sets This Workflow Apart?
-No single point of failure: Every step has a graceful fallback.
+---
 
-Modular, composable, and easy to extend (CI/CD ready).
+## 🛡️ What Sets This Workflow Apart?
 
-Instant team notifications via Discord—no manual copy-paste.
-
-Designed for reliability, reproducibility, and transparent AI collaboration.
-
-
-
+- **No single point of failure:** Every step has a graceful fallback.
+- **Modular, composable, and easy to extend (CI/CD ready).**
+- **Instant team notifications via Discord—no manual copy-paste.**
+- **Designed for reliability, reproducibility, and transparent AI collaboration.**
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
