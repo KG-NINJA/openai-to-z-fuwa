@@ -37,22 +37,12 @@ Logs provide full traceability for skipped steps.
 
 🔄 How to Use Automated Discord Notifications
 Generate summaries as usual:
-
-bash
-Copy
-Edit
 python generate_site_summaries.py
 Send results to Discord:
-
-bash
-Copy
-Edit
 python send_summaries_to_discord.py --webhook <your_discord_webhook_url>
 Or, set the webhook as an environment variable:
 
-bash
-Copy
-Edit
+
 export DISCORD_WEBHOOK_URL=<your_discord_webhook_url>
 python send_summaries_to_discord.py
 🧠 Codex/AI-Assisted Engineering
@@ -67,11 +57,6 @@ Modular, composable, and easy to extend (CI/CD ready).
 Instant team notifications via Discord—no manual copy-paste.
 
 Designed for reliability, reproducibility, and transparent AI collaboration.
-
-yaml
-Copy
-Edit
-
 
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
