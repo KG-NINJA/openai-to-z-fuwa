@@ -12,6 +12,66 @@ Results include maps, GeoJSONs, and poetic context.**
 5. **Fully automated pipeline:** One command delivers all analyses and outputs.
 
 ...
+## 📈 Robustness & Automated Notifications (NEW!)
+
+**New in this release:**
+
+- **Graceful fallback:**  
+  If PDF generation fails due to missing [Pandoc](https://pandoc.org/), the system logs a warning and continues, never blocking the core workflow.
+- **Test resilience:**  
+  Unit tests for Earth Engine exports use mocked objects, ensuring all tests run even in restricted or offline environments.
+- **Seamless Discord notifications:**  
+  All site summaries and evidence images are automatically posted to your chosen Discord channel using `send_summaries_to_discord.py`. The webhook URL can be passed as a CLI argument or via the `DISCORD_WEBHOOK_URL` environment variable.
+
+### ⚡️ Pipeline Overview
+
+```mermaid
+flowchart LR
+    A[candidates.json] --> B[generate_site_summaries.py]
+    B --> C[summaries.md]
+    C --> D[send_summaries_to_discord.py]
+    D --> E[Discord Channel]
+No single point of failure:
+Network issues or missing dependencies never halt the process.
+Logs provide full traceability for skipped steps.
+
+🔄 How to Use Automated Discord Notifications
+Generate summaries as usual:
+
+bash
+Copy
+Edit
+python generate_site_summaries.py
+Send results to Discord:
+
+bash
+Copy
+Edit
+python send_summaries_to_discord.py --webhook <your_discord_webhook_url>
+Or, set the webhook as an environment variable:
+
+bash
+Copy
+Edit
+export DISCORD_WEBHOOK_URL=<your_discord_webhook_url>
+python send_summaries_to_discord.py
+🧠 Codex/AI-Assisted Engineering
+Recent improvements—including robust error handling, mock-based testing, and the Discord integration—were co-designed and code-reviewed with OpenAI Codex/ChatGPT.
+This project demonstrates an AI-native engineering workflow: every automation and enhancement is reproducible, explainable, and open to review.
+
+🛡️ What Sets This Workflow Apart?
+No single point of failure: Every step has a graceful fallback.
+
+Modular, composable, and easy to extend (CI/CD ready).
+
+Instant team notifications via Discord—no manual copy-paste.
+
+Designed for reliability, reproducibility, and transparent AI collaboration.
+
+yaml
+Copy
+Edit
+
 
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
