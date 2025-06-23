@@ -23,7 +23,6 @@ Results include maps, GeoJSONs, and poetic context.**
 - **Seamless Discord notifications:**  
   All site summaries and evidence images are automatically posted to your chosen Discord channel using `send_summaries_to_discord.py`. The webhook URL can be passed as a CLI argument or via the `DISCORD_WEBHOOK_URL` environment variable.
 
-### ⚡️ Pipeline Overview
 
 ### ⚡️ Pipeline Overview
 
