@@ -1,4 +1,3 @@
----
 ## ⚡️ TL;DR
 
 **Input coordinates, and this pipeline auto-generates a Markdown report on Amazonian ruin likelihood—combining NDVI anomaly analysis, soil, hydrology, and toponymic local-legend AI.  
