@@ -25,15 +25,15 @@ Results include maps, GeoJSONs, and poetic context.**
 
 ### ⚡️ Pipeline Overview
 
+### ⚡️ Pipeline Overview
+
 ```mermaid
 flowchart LR
     A[candidates.json] --> B[generate_site_summaries.py]
     B --> C[summaries.md]
     C --> D[send_summaries_to_discord.py]
     D --> E[Discord Channel]
-No single point of failure:
-Network issues or missing dependencies never halt the process.
-Logs provide full traceability for skipped steps.
+
 
 🔄 How to Use Automated Discord Notifications
 Generate summaries as usual:
