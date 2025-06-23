@@ -37,6 +37,9 @@ Link: [{{ geojson_file }}]({{ geojson_file }})
 - Reason: {{ c.reason }}
 {% endfor %}
 
+## Toponymic and Local-Legend Insights
+{{ toponymic_insights }}
+
 ## Interpretation
 {{ interpretation }}
 

@@ -2,3 +2,6 @@ pillow==11.2.1
 geemap
 earthengine-api>=0.1.375
 pandas==2.3.0
+openai
+overpy
+geopy
