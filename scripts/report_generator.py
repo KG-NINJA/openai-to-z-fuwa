@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+import shutil
 import jinja2
 
 TEMPLATE_PATH = os.path.join('templates', 'template.md')
@@ -31,12 +32,15 @@ def generate_report():
         f.write(markdown)
     print(f'Markdown generated at {MD_PATH}')
 
-    try:
-        subprocess.run(['pandoc', MD_PATH, '-o', PDF_PATH], check=True)
-        print(f'PDF generated at {PDF_PATH}')
-    except Exception as e:
-        print('PDF generation failed:', e)
-        raise
+    pandoc_path = shutil.which('pandoc')
+    if pandoc_path:
+        try:
+            subprocess.run([pandoc_path, MD_PATH, '-o', PDF_PATH], check=True)
+            print(f'PDF generated at {PDF_PATH}')
+        except Exception as e:
+            print('PDF generation failed:', e)
+    else:
+        print('pandoc not found; skipping PDF generation')
 
 
 if __name__ == '__main__':
