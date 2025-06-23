@@ -5,9 +5,12 @@ Results include maps, GeoJSONs, and poetic context.**
 
 ## 🚀 Technical Highlights
 
-- Universal pipeline: plug in any region, any legend, any data source
-- All logic open and auditable, CI-tested, and easily extended by the community
-- MCP/GitHub/Cloud-agnostic: ready for next-gen AI workflows
+1. **Universal & region-agnostic:** Plug in any coordinates, any legend, any data source.
+2. **Open, auditable, and CI-tested:** All logic is transparent and reproducible.
+3. **MCP/GitHub/Cloud-native:** Future-proof, extensible for all next-gen AI workflows.
+4. **Toponymic & legend-aware:** AI interprets local names and lore for global adaptability.
+5. **Fully automated pipeline:** One command delivers all analyses and outputs.
+
 ...
 
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
