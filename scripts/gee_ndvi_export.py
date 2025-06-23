@@ -4,6 +4,7 @@ import re
 import json
 import logging
 import argparse
+from typing import Optional
 
 import pandas as pd
 import ee
@@ -23,6 +24,27 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 def slugify(text: str) -> str:
     """Return a filesystem-friendly slug."""
     return re.sub(r"\W+", "_", text.strip()).strip("_").lower()
+
+
+def initialize_earthengine() -> None:
+    """Initialize Earth Engine and exit with a helpful message on failure."""
+    key_path: Optional[str] = os.getenv("EE_SERVICE_ACCOUNT_FILE")
+    try:
+        if key_path:
+            if not os.path.exists(key_path):
+                raise FileNotFoundError(key_path)
+            with open(key_path, "r") as f:
+                info = json.load(f)
+            credentials = ee.ServiceAccountCredentials(info["client_email"], key_path)
+            ee.Initialize(credentials)
+        else:
+            ee.Initialize()
+    except Exception as e:
+        logging.error("Earth Engine authentication failed: %s", e)
+        logging.error(
+            "Run `earthengine authenticate` or set EE_SERVICE_ACCOUNT_FILE to a service account JSON"
+        )
+        raise SystemExit(1)
 
 
 def export_site_ndvi(site_name: str, lat: float, lon: float, out_dir: str) -> str:
@@ -48,7 +70,7 @@ def export_site_ndvi(site_name: str, lat: float, lon: float, out_dir: str) -> st
 
 
 def main(csv_path: str, out_dir: str) -> None:
-    ee.Initialize()
+    initialize_earthengine()
     df = pd.read_csv(csv_path)
 
     mapping = {}
