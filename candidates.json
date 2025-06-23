@@ -1,0 +1,12 @@
+[
+  {
+    "site_name": "Site Alpha",
+    "evidence": "pottery fragments near riverbank",
+    "image_path": "images/alpha.jpg"
+  },
+  {
+    "site_name": "Site Beta",
+    "evidence": "linear earthworks within forest",
+    "image_path": "images/beta.jpg"
+  }
+]
