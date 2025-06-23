@@ -3,11 +3,6 @@
 
 **Input coordinates, and this pipeline auto-generates a Markdown report on Amazonian ruin likelihood—combining NDVI anomaly analysis, soil, hydrology, and toponymic local-legend AI.  
 Results include maps, GeoJSONs, and poetic context.**
----
-# 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
-
-...
-
 
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
