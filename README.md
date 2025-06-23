@@ -70,6 +70,9 @@ This project demonstrates an AI-native engineering workflow: every automation an
 - **Modular, composable, and easy to extend (CI/CD ready).**
 - **Instant team notifications via Discord—no manual copy-paste.**
 - **Designed for reliability, reproducibility, and transparent AI collaboration.**
+  
+---
+
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
