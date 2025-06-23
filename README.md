@@ -32,7 +32,7 @@ flowchart LR
     B --> C[summaries.md]
     C --> D[send_summaries_to_discord.py]
     D --> E[Discord Channel]
-
+```
 
 🔄 How to Use Automated Discord Notifications
 Generate summaries as usual:
