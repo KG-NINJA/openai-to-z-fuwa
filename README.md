@@ -1,8 +1,8 @@
-🐾 What is "Fuwa"?
+🐾 **What is "Fuwa"?
 In Japanese, fuwa-fuwa means "soft, fluffy, and flexible"—the opposite of rigid.
 Our algorithms, inspired by this spirit, remain adaptive and resonant—never locked, always learning, just like intuition and the living world.
 
-“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”
+“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”**
 
 ## ⚡️ TL;DR
 
