@@ -78,6 +78,16 @@ This project demonstrates an AI-native engineering workflow: every automation an
 🐾 **Two Fuwas resonate:**
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
 *Fuwa's footsteps become the rhythm of the algorithm.*
+---
+🐾 **What is "Fuwa"?**  
+In Japanese, *fuwa-fuwa* means "soft, fluffy, flexible"—not rigid.  
+Our algorithms, inspired by this spirit, are not set in stone, but adapt and resonate—just like intuition and nature itself.
+---
+
+## ⚡️ TL;DR
+
+**Input any coordinates—instantly get a Markdown/PDF report on Amazonian ruin likelihood...**
+
 
 ---
 
