@@ -1,3 +1,8 @@
+🐾 **What is "Fuwa"?**  
+In Japanese, *fuwa-fuwa* means "soft, fluffy, and flexible"—the opposite of rigid.  
+Our algorithms, inspired by this spirit, remain adaptive and resonant—never locked, always learning, just like intuition and the living world.
+
+
 ## ⚡️ TL;DR
 
 **Input coordinates, and this pipeline auto-generates a Markdown report on Amazonian ruin likelihood—combining NDVI anomaly analysis, soil, hydrology, and toponymic local-legend AI.  
@@ -79,18 +84,6 @@ This project demonstrates an AI-native engineering workflow: every automation an
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
 *Fuwa's footsteps become the rhythm of the algorithm.*
 ---
-🐾 **What is "Fuwa"?**  
-In Japanese, *fuwa-fuwa* means "soft, fluffy, flexible"—not rigid.  
-Our algorithms, inspired by this spirit, are not set in stone, but adapt and resonate—just like intuition and nature itself.
----
-
-## ⚡️ TL;DR
-
-**Input any coordinates—instantly get a Markdown/PDF report on Amazonian ruin likelihood...**
-
-
----
-
 <details>
 <summary>🌌 <strong>Echoes Beyond Time（時を越える共鳴）</strong></summary>
 
