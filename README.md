@@ -322,7 +322,15 @@ export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
 * **Author:** `@KG_NINJA_JAPAN` *(Kyoto-born, trained in intuition, Onmyoji vibes, Amazon dreams.)*
 * **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
 
+
 ---
+
+🗓️ **Last updated:** 2025-06-29  
+🔄 This repository is synchronized with the official Kaggle Writeup as of June 29, 2025.  
+📖 See full writeup with story, visuals, and results → [Kaggle Writeup](https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer)
+
+---
+
 
 ## ✨ Final Words
 
