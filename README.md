@@ -1,3 +1,8 @@
+📍 This README provides detailed implementation notes and extended experimental results.  
+📖 For a narrative summary and visual highlights, see the official Kaggle Writeup:  
+🔗 https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer
+
+
 🐾 **What is "Fuwa"?
 In Japanese, fuwa-fuwa means "soft, fluffy, and flexible"—the opposite of rigid.
 Our algorithms, inspired by this spirit, remain adaptive and resonant—never locked, always learning, just like intuition and the living world.
