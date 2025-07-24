@@ -314,14 +314,14 @@ But in this jungle of signal and silence,
 
 > 忍者の目はごまかせない。  
 > The ninja sees through the quietest anomaly.
-> AGI or Not, I Danced
+
+**AGI or not—I danced.**
 
 If that was AGI... I’m honored.  
 If not, I'm still honored to have felt its rhythm.
 
-Either way—  
+And either way—  
 > オラ、わくわくすっぞ。
-
 
 **#KGNINJA**
 
