@@ -291,11 +291,11 @@ export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
 
 **NDVI Composite Map with Candidate Markers**
 
-![Candidate Composite Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/Screenshot%202025-06-20%2018.19.13.png)
+![Candidate Composite Map](images/Screenshot%202025-06-20%2018.19.13.png)
 
 **NDVI Z-Score Heatmap (Site O4)**
 
-![NDVI Z-score Map](https://github.com/KG-NINJA/openai-to-z-fuwa/blob/main/o4_ndvi_zscore.png)
+![NDVI Z-score Map](images/o4_ndvi_zscore.png)
 
 **Example Toponymic Insight**
 
