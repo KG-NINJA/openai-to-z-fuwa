@@ -144,14 +144,6 @@ I explore guided by these intuitive beliefs:
 
 ---
 
-## 🐾 Why Dogs? (Instinct as Sensor)
-Before we had sensors or algorithms, we had dogs.
-They pause where we feel nothing, yet something lingers.
-In this project, we log canine hesitation points and compare them to NDVI anomalies and toponymic clues.
-This is not superstition — it is sensing before knowing.
-Ancient choices may have followed instinct, and we remember that by listening to our oldest companions.
----
-
 ## 🛠 Tools & Technologies
 
 | Category           | Tools                                                |
