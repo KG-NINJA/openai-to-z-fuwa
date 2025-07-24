@@ -5,3 +5,4 @@ pandas==2.3.0
 openai
 overpy
 geopy
+jinja2
