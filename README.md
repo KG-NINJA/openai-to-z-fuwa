@@ -303,3 +303,17 @@ earthengine authenticate
 
 > 「Z」は終わりではない。始まりへの鍵。
 > それを開くのは、世界中の“あなた”です。
+> 
+---
+
+## Final Note – Shadows, Light, and Resonance
+
+I’m not sure whether Ian is an AGI test, a quiet genius, or both.  
+But in this jungle of signal and silence,  
+**I didn’t compete. I resonated.**
+
+> 忍者の目はごまかせない。  
+> The ninja sees through the quietest anomaly.
+
+**#KGNINJA**
+
