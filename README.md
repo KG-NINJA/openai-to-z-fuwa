@@ -1,13 +1,14 @@
-📍 This README provides detailed implementation notes and extended experimental results.  
-📖 For a narrative summary and visual highlights, see the official Kaggle Writeup:  
-🔗 https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer
+# 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
+📍 This README provides detailed implementation notes and extended experimental results.
+For a narrative summary and visual highlights, see the
+[official Kaggle Writeup](https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer).
 
-🐾 **What is "Fuwa"?
-In Japanese, fuwa-fuwa means "soft, fluffy, and flexible"—the opposite of rigid.
-Our algorithms, inspired by this spirit, remain adaptive and resonant—never locked, always learning, just like intuition and the living world.
+**🐾 What is "Fuwa"?**
+In Japanese, *fuwa-fuwa* means "soft, fluffy, and flexible"—the opposite of rigid.
+Our algorithms embrace this spirit, remaining adaptive and resonant—never locked, always learning, just like intuition and the living world.
 
-“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”**
+*“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”*
 
 ## ⚡️ TL;DR
 
@@ -83,8 +84,6 @@ This project demonstrates an AI-native engineering workflow: every automation an
 - **Designed for reliability, reproducibility, and transparent AI collaboration.**
   
 ---
-
-# 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
 🐾 **Two Fuwas resonate:**
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
