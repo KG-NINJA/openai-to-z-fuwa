@@ -1,3 +1,5 @@
 *.geojson -diff
 *.png -diff
 /data/Identifying -diff
+*.ipynb -diff
+
