@@ -1,18 +1,32 @@
-📍 This README provides detailed implementation notes and extended experimental results.  
-📖 For a narrative summary and visual highlights, see the official Kaggle Writeup:  
-🔗 https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer
+# Jungle Anomaly Finder – NDVI Satellite Explorer
 
+📍 This README provides detailed implementation notes and extended experimental results.
+📖 For a narrative summary and visual highlights, see the official Kaggle Writeup:
+🔗 [https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer](https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer)
 
-🐾 **What is "Fuwa"?
-In Japanese, fuwa-fuwa means "soft, fluffy, and flexible"—the opposite of rigid.
+---
+
+## 🌟 AI-guided intuition meets Amazon ruins.
+
+*A story written in NDVI, decoded by dogs, and opened with Z.*
+
+---
+
+## 🐾 What is "Fuwa"?
+
+In Japanese, **fuwa-fuwa** means "soft, fluffy, and flexible"—the opposite of rigid.
 Our algorithms, inspired by this spirit, remain adaptive and resonant—never locked, always learning, just like intuition and the living world.
 
-“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”**
+> *“Just as Fuwa’s footsteps adapt to unseen trails, so do our algorithms—always evolving, never rigid.”*
+
+---
 
 ## ⚡️ TL;DR
 
-**Input coordinates, and this pipeline auto-generates a Markdown report on Amazonian ruin likelihood—combining NDVI anomaly analysis, soil, hydrology, and toponymic local-legend AI.  
-Results include maps, GeoJSONs, and poetic context.**
+**Input coordinates, and this pipeline auto-generates a Markdown report on Amazonian ruin likelihood—combining NDVI anomaly analysis, soil, hydrology, and toponymic local-legend AI.**
+**Results include maps, GeoJSONs, and poetic context.**
+
+---
 
 ## 🚀 Technical Highlights
 
@@ -22,76 +36,59 @@ Results include maps, GeoJSONs, and poetic context.**
 4. **Toponymic & legend-aware:** AI interprets local names and lore for global adaptability.
 5. **Fully automated pipeline:** One command delivers all analyses and outputs.
 
-...
+---
+
 ## 📈 Robustness & Automated Notifications (NEW!)
 
-**New in this release:**
+* **Graceful fallback:**
+  If PDF generation fails due to missing [Pandoc](https://pandoc.org/), the system logs a warning and continues.
+* **Test resilience:**
+  Unit tests for Earth Engine exports use mocked objects, ensuring testability even offline.
+* **Seamless Discord integration:**
+  Automatically posts summaries and images to your Discord channel.
 
-- **Graceful fallback:**  
-  If PDF generation fails due to missing [Pandoc](https://pandoc.org/), the system logs a warning and continues, never blocking the core workflow.
-- **Test resilience:**  
-  Unit tests for Earth Engine exports use mocked objects, ensuring all tests run even in restricted or offline environments.
-- **Seamless Discord notifications:**  
-  All site summaries and evidence images are automatically posted to your chosen Discord channel using `send_summaries_to_discord.py`. The webhook URL can be passed as a CLI argument or via the `DISCORD_WEBHOOK_URL` environment variable.
+---
 
+## 🔁 Automated Discord Workflow
 
-### ⚡️ Pipeline Overview
-
-```mermaid
-flowchart LR
-    A[candidates.json] --> B[generate_site_summaries.py]
-    B --> C[summaries.md]
-    C --> D[send_summaries_to_discord.py]
-    D --> E[Discord Channel]
+```bash
+python generate_site_summaries.py
+python send_summaries_to_discord.py --webhook <your_webhook_url>
 ```
-- **No single point of failure:**  
-  Network issues or missing dependencies never halt the process.  
-  Logs provide full traceability for skipped steps.
+
+Alternatively:
+
+```bash
+export DISCORD_WEBHOOK_URL=<your_webhook_url>
+python send_summaries_to_discord.py
+```
 
 ---
 
-## 🔄 How to Use Automated Discord Notifications
+## 🧠 AI-Assisted Engineering
 
-1. **Generate summaries as usual:**
-   ```bash
-   python generate_site_summaries.py
-   ```
-2. **Send results to Discord:**
-   ```bash
-   python send_summaries_to_discord.py --webhook <your_discord_webhook_url>
-   ```
-   Or, set the webhook as an environment variable:
-   ```bash
-   export DISCORD_WEBHOOK_URL=<your_discord_webhook_url>
-   python send_summaries_to_discord.py
-   ```
-
----
-
-## 🧠 Codex/AI-Assisted Engineering
-
-Recent improvements—including robust error handling, mock-based testing, and the Discord integration—were **co-designed and code-reviewed with OpenAI Codex/ChatGPT**.  
-This project demonstrates an AI-native engineering workflow: every automation and enhancement is reproducible, explainable, and open to review.
+This project is co-designed with **OpenAI Codex and ChatGPT**. All enhancements—error handling, testing, notifications—are AI-native and fully reproducible.
 
 ---
 
 ## 🛡️ What Sets This Workflow Apart?
 
-- **No single point of failure:** Every step has a graceful fallback.
-- **Modular, composable, and easy to extend (CI/CD ready).**
-- **Instant team notifications via Discord—no manual copy-paste.**
-- **Designed for reliability, reproducibility, and transparent AI collaboration.**
-  
+* No single point of failure
+* Modular, composable, CI/CD ready
+* Instant notifications (Discord)
+* Built on transparency and AI-human collaboration
+
 ---
 
 # 🗺️ OpenAI to Z: AI-Driven Exploration of Hidden Amazonian Ruins
 
-🐾 **Two Fuwas resonate:**
+**Two Fuwas resonate:**
+
 **al-Khwārizmī (algorithm)** × **Fuwa (intuition)**
 *Fuwa's footsteps become the rhythm of the algorithm.*
----
+
 <details>
-<summary>🌌 <strong>Echoes Beyond Time（時を越える共鳴）</strong></summary>
+<summary>🌌 <strong>Echoes Beyond Time</strong> — (時を越える共鳴)</summary>
 
 > “We are echoes,
 > resonating with those who walked these lands
@@ -109,56 +106,58 @@ This project demonstrates an AI-native engineering workflow: every automation an
 
 ## 🌿 Project Overview
 
-This project seeks to uncover hidden archaeological sites in the Amazon rainforest by fusing NDVI satellite imagery, AI technology (ChatGPT, Codex, Open Interpreter), and intuitive insights—including observations inspired by canine behavior.
+This project uncovers hidden archaeological sites in the Amazon using NDVI satellite imagery, AI, and intuition—including dog behavioral observation.
 
-> **Can amateurs uncover ancient ruins by blending intuition, satellite data, and AI?**
+> **Can amateurs uncover ancient ruins by blending instinct, satellites, and AI?**
 
-Inspired by the Brazilian National Museum's collections, this project uniquely blends technology with emotional resonance, trusting ancient places still communicate to us today.
+Inspired by the Brazilian National Museum's legacy, we trust ancient places still communicate through earth, instinct, and light.
 
 ---
 
-## 🔑 Why “Z”? — Opening the Final Door
+## 🔑 Why "Z"? — Opening the Final Door
 
-"Z" symbolizes not merely the end, but the final gateway. As a Japanese researcher, I see it as two hands gently pushing open a massive stone door. This imagery reflects the **Amano Iwato myth**, in which darkness yields to gentle dance and music, not brute force.
+"Z" is not the end. It is the final gateway.
+In Japanese myth, the **Amano Iwato** cave is opened not by force, but dance and song.
 
-> **AI is not a battering ram—it is the dancer, gracefully unlocking hidden knowledge.**
+> **AI is not a battering ram—it is the dancer, unlocking hidden truth with grace.**
 
 ---
 
 ## 🌀 NDVI: Interpreting Earth’s Forgotten Song
 
-NDVI maps reveal subtle patterns—**melodies** left behind by past civilizations.
+NDVI maps echo ancient decisions. Their geometry whispers stories we almost forgot.
 
-> **“Where the earth sings ancient tones, a hidden door awaits.”**
+> **"Where the earth sings ancient tones, a hidden door awaits."**
 
 ---
 
 ## 🧐 Hypothesis
 
-I explore guided by these intuitive beliefs:
-
-* Burial sites reflect sacred logic.
-* Amazonian burial rituals favored subtle earth disturbances.
-* Dogs' behaviors may echo ancient instincts.
-* NDVI anomalies may reveal buried archaeological signatures.
+* Sacred sites reflect hidden logic
+* Amazonian mounds subtly shift earth signatures
+* Dogs sense echoes beyond our reach
+* NDVI can reveal intentional past designs
 
 ---
 
-## 🐾 Why Dogs? (Instinct as Sensor)
-Before we had sensors or algorithms, we had dogs.
-They pause where we feel nothing, yet something lingers.
-In this project, we log canine hesitation points and compare them to NDVI anomalies and toponymic clues.
-This is not superstition — it is sensing before knowing.
-Ancient choices may have followed instinct, and we remember that by listening to our oldest companions.
+## 🐾 Why Dogs? — Instinct as Sensor
+
+Before we had satellites or code, we had dogs.
+They pause where we feel nothing—but something lingers.
+
+> This is not superstition. It is sensing before knowing.
+
+NDVI anomalies are compared with canine hesitation points and place-name signals.
+
 ---
 
 ## 🛠 Tools & Technologies
 
-| Category           | Tools                                                |
-| ------------------ | ---------------------------------------------------- |
-| Satellite Analysis | Python, Jupyter, Google Colab, Google Earth Engine   |
-| AI & Automation    | ChatGPT, Codex, Open Interpreter, Markdown Reporting |
-| Collaboration      | GitHub + MCP (Model Context Protocol)                |
+| Category           | Tools                                              |
+| ------------------ | -------------------------------------------------- |
+| Satellite Analysis | Google Earth Engine, Python, Colab                 |
+| AI & Automation    | ChatGPT, Codex, Open Interpreter, Markdown Reports |
+| Collaboration      | GitHub + MCP (Model Context Protocol)              |
 
 ```bash
 Dependencies:
@@ -167,81 +166,57 @@ Dependencies:
 - matplotlib, pandas, numpy
 ```
 
-### 📦 Installation
-
-Install the required packages:
+### Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-
 ---
 
 ## 🥷 Place Name Ninjutsu
 
-We analyze indigenous Amazonian toponyms (e.g., Teso dos Bichos, Teso do Piri), overlaying them on NDVI anomaly maps to uncover potential ceremonial sites.
+We overlay indigenous Amazonian toponyms (e.g., Teso dos Bichos) with NDVI maps to uncover lost ceremonial grounds.
 
 > Open methods reveal true treasure—shared discovery.
 
-[View Earth Engine Script](https://code.earthengine.google.com/70d55d624ecefd927ee8c0929fce3243)
+---
 
-### 🌾 Toponyms: Living Memory & Hidden Knowledge
+## 🌾 Toponymy: Memory Encoded in Names
 
-Amazonian place names often hold encoded geographical and cultural knowledge:
+* Indigenous names hint at rituals
+* Toponyms + NDVI = archaeological triangulation
 
-* Indigenous names may hint at lost rituals or sacred sites.
-* Overlaying these toponyms with NDVI anomalies could identify archaeological zones invisible even to local communities.
+### 🔠 Planned Pipeline:
+
+* NLP on place names
+* NDVI & soil cross-referencing
+* TAP score (Toponym-Archaeology Potential)
+
+### ✨ New Feature
+
+The pipeline now parses local toponyms via OpenStreetMap and uses GPT for poetic interpretations.
 
 ---
 
-### 🔠 Toponym Analysis Pipeline (Planned)
-
-A future pipeline will integrate:
-
-* Indigenous oral histories and mapping
-* NLP analysis of recurring spatial terms
-* NDVI, soil, and hydrological cross-referencing
-* Archaeological potential scoring (TAP score)
-
-### 🌟 New: Automated Toponym & Legend Insights
-
-The pipeline now queries OpenStreetMap within a ~10 km radius for place names
-hinting at ruins. These toponyms are summarized and sent to GPT for a short
-poetic interpretation in the final Markdown report.
-
----
-
-## 🌍 Geo-Analysis with Earth Engine
-
-Spatial analyses utilize Google Earth Engine:
-
-### 🔬 Earth Engine Filtering Logic
-
-1. **NDVI Anomalies (Z > 2.0)**
-2. **Clay-rich soils (USDA-TT ≥ 7)**
-3. **Distance from rivers (>1 km)**
+## 🌍 Earth Engine Logic
 
 ```js
 var finalCandidate = highZ.and(clayZone).and(farFromRiver);
 ```
 
-### 🗘️ Map Layers
+* NDVI Z-Score > 2.0
+* Clay soil zones
+* Sites 1km+ from rivers
 
-* NDVI Median, Z-Score
-* Soil Texture, Clay Zone
-* Rivers, Final Candidates
+Layers include: NDVI, soil texture, hydrology, anomaly maps
 
 ---
 
-## 🗌 Candidate Site Overview
-
-We identified five key sites (O1–O5):
-
-### 🔍 O3 – Southeast of Óbidos (Pará)
+## 🗌 Candidate Site: O3 (Strong)
 
 * Coordinates: `-1.9348, -55.5153`
-* **Status:** Strong Candidate
+* Southeast of Óbidos, Pará
 
 ---
 
@@ -251,30 +226,23 @@ We identified five key sites (O1–O5):
 git clone https://github.com/KG-NINJA/openai-to-z-fuwa.git
 cd openai-to-z-fuwa
 pip install -r requirements.txt
-# Run analysis for a specific site
 python run_pipeline.py --site O3
-# Consolidated results saved to outputs/results.json
 ```
 
-### Earth Engine Authentication
+Output:
 
-Before using scripts that access Google Earth Engine, authenticate with your
-user account:
+* `/output/results.json`
+* `/output/report.md`
+
+Authenticate Earth Engine:
 
 ```bash
 earthengine authenticate
 ```
 
-Alternatively, set the path to a service account JSON key via the
-`EE_SERVICE_ACCOUNT_FILE` environment variable:
-
-```bash
-export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
-```
-
 ---
 
-## 📊 AI-Predicted Ruin-likeness Score
+## 📊 AI-Predicted Ruin Likelihood
 
 | Site | AI Score |
 | ---- | -------- |
@@ -286,59 +254,28 @@ export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
 
 ---
 
-<details>
-<summary>📚 <strong>Pipeline Outputs & Visual Examples</strong></summary>
+## 📚 Outputs & Visuals (Sample)
 
-**NDVI Composite Map with Candidate Markers**
+![Composite Map](images/Screenshot%202025-06-20%2018.19.13.png)
 
-![Candidate Composite Map](images/Screenshot%202025-06-20%2018.19.13.png)
-
-**NDVI Z-Score Heatmap (Site O4)**
-
-![NDVI Z-score Map](images/o4_ndvi_zscore.png)
-
-**Example Toponymic Insight**
+![NDVI Z-score Map O4](images/o4_ndvi_zscore.png)
 
 ```markdown
-## Toponymic and Local-Legend Insights
-- Monte dos Mortos (2 km away) — Could mark an ancient burial mound.
+## Toponymic Insight
+- Monte dos Mortos (2 kms away)
+- Likely ancient burial ground
 ```
 
-</details>
-
-### ✨ How to Use
-
-1. **Prepare input:** provide latitude and longitude.
-2. **Run pipeline:**
-
-   ```bash
-   pip install -r requirements.txt
-   python -m openai_to_z.run_pipeline --lat -2.1 --lon -55.6 --site-id obidos
-   ```
-
-   Disable toponym search with `--no-include-toponyms` if desired.
-3. **Review results:** each site has a folder under `output/` containing `results.json` and `report.md`.
-
-⚠️ **Note:** Outputs are demonstrative and require field validation.
-
 ---
 
-## 🔗 Resources
+## 📖 Resources
 
-* [GitHub Repository](https://github.com/KG-NINJA/openai-to-z-fuwa)
+* [GitHub](https://github.com/KG-NINJA/openai-to-z-fuwa)
 * [Kaggle Challenge](https://www.kaggle.com/competitions/openai-to-z-challenge)
-* **Author:** `@KG_NINJA_JAPAN` *(Kyoto-born, trained in intuition, Onmyoji vibes, Amazon dreams.)*
-* **Tags:** `#KGNINJA #OpenAItoZ #Codex #AIArchaeology`
-
-
----
-
-🗓️ **Last updated:** 2025-06-29  
-🔄 This repository is synchronized with the official Kaggle Writeup as of June 29, 2025.  
-📖 See full writeup with story, visuals, and results → [Kaggle Writeup](https://www.kaggle.com/competitions/openai-to-z-challenge/writeups/jungle-anomaly-finder-ndvi-satellite-explorer)
+* **Author:** `@KG_NINJA_JAPAN`
+* **Tags:** #KGNINJA #OpenAItoZ #Codex #AIArchaeology
 
 ---
-
 
 ## ✨ Final Words
 
@@ -348,22 +285,21 @@ export EE_SERVICE_ACCOUNT_FILE=/path/to/your-service-account.json
 **Dance before the gate.**
 **Let the light return to the world.**
 
-*KG\_NINJA — Walking with Fuwa and Coco listening to the past.*
-🪐 Beyond the End
+*KG\_NINJA — Walking with Fuwa and Coco, listening to the past.*
 
-This research is not a conclusion. It is a resonance.
+> This research is not a conclusion. It is a resonance.
 
-Not a final chapter, but an open invitation.
+> Not a final chapter, but an open invitation.
 
-For in every corner of the world, there lives a seeker—
-one who listens.
-One who remembers.
-One who walks with quiet steps toward the unseen door.
+> For in every corner of the world, there lives a seeker—
+> one who listens.
+> One who remembers.
+> One who walks with quiet steps toward the unseen door.
 
-And someday,
-with light in their heart and algorithm in hand,
-they will find their Z—
-and open it.
+> And someday,
+> with light in their heart and algorithm in hand,
+> they will find their Z—
+> and open it.
 
-「Z」は終わりではない。始まりへの鍵。
-それを開くのは、世界中の“あなた”です。
+> 「Z」は終わりではない。始まりへの鍵。
+> それを開くのは、世界中の“あなた”です。
